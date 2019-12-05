@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "San Francisco";
+  src: url("../fonts/SFUIText-Light.eot");
+  src: url("../fonts/SFUIText-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Light.woff") format("woff"), url("../fonts/SFUIText-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 13px;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "San Francisco", Arial, sans-serif;
+  color: #3D5170;
+  background-color: #fff;
+  line-height: 1.2;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.body-container {
+  display: grid;
+  grid-template-areas: "logo header" "nav-dashboards main-content" "nav-dashboards fot";
+  grid-template-columns: 285px 1fr;
+  grid-template-rows: 68px 1fr 69px;
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #fff;
+  box-shadow: 0 5px 19px rgba(90, 97, 105, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__left {
+  flex-grow: 1;
+}
+.nav-dashboards {
+  grid-area: nav-dashboards;
+}
+
+.main-content {
+  grid-area: main-content;
+}
+
+.foot {
+  grid-area: fot;
+}
+
+.search__img {
+  display: inline-block;
+  margin-right: 18px;
+  width: 14px;
+  height: 14px;
+}
+.search__text {
+  display: inline-block;
+}
+
+.user-details {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 14px 22px 14px 26px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.user-details__name-user {
+  position: relative;
+  margin: 0 0 0 14px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 40px;
+  padding: 0 22px 0 0;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.user-details__name-user:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background: url("../images/header-icons/dropdown-icon.svg") 0 0 no-repeat;
+  background-size: contain;
+  width: 9px;
+  height: 5px;
+  margin: -2px 0 0 16px;
+}
+
+.notification {
+  display: inline-flex;
+  vertical-align: middle;
+}
+.notification__img-icon {
+  border: 1px solid #CACEDB;
+  border-top: none;
+  border-bottom: none;
+  width: 70px;
+  height: 68px;
+  display: inline-block;
+  position: relative;
+  background: url("../images/header-icons/notifications.svg") center no-repeat;
+  background-size: 17px 21px;
+}
+.notification__img-icon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 11px;
+  top: 11px;
+  background: url("../images/header-icons/count.svg") 0 0 no-repeat;
+  width: 14px;
+  height: 14px;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=style.css.map */

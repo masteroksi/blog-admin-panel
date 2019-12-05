@@ -1,0 +1,29 @@
+.notification {
+  display: inline-flex;
+  vertical-align: middle;
+
+  &__img-icon {
+    border: 1px solid #CACEDB;
+    border-top: none;
+    border-bottom: none;
+    width: 70px;
+    height: $headerHeight;
+
+    display: inline-block;
+    position: relative;
+    background: url("../images/header-icons/notifications.svg") center no-repeat;
+    background-size: 17px 21px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 11px;
+      top: 11px;
+      background: url("../images/header-icons/count.svg") 0 0 no-repeat;
+      width: 14px;
+      height: 14px;
+      background-size: contain;
+    }
+  }
+}

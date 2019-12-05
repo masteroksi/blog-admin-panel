@@ -1,0 +1,20 @@
+html {
+  font-size: 13px;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+
+body {
+  font-family: $basefont;
+  color: $textColor;
+  background-color: $white;
+  line-height: 1.2;
+  position: relative;
+  word-wrap: break-word;
+}
+
+

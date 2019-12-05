@@ -1,0 +1,38 @@
+.user-details {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 14px 22px 14px 26px;
+  display: inline-block;
+  vertical-align: middle;
+
+  &__img-avatar {
+
+  }
+
+  &__name-user {
+    position: relative;
+    margin: 0 0 0 14px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 40px;
+    padding: 0 22px 0 0;
+
+    // dots if long name
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      background: url("../images/header-icons/dropdown-icon.svg") 0 0 no-repeat;
+      background-size: contain;
+      width: 9px;
+      height: 5px;
+      margin: -2px 0 0 16px;
+    }
+  }
+}
