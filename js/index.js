@@ -1,3 +1,5 @@
+"use strict";
+
 const filmInfo = {
     name: "Carnival Row",
     year: 2019,
@@ -19,3 +21,11 @@ const filmInfo = {
         "Jared Harris",
     ]
 };
+
+const key = prompt("информация о фильме", "name");
+
+if (filmInfo[key]) {
+    alert(filmInfo[key]);
+} else {
+    alert("нет информации");
+}
