@@ -19,13 +19,25 @@ const filmInfo = {
         "Arty Froushan",
         "Indira Varma",
         "Jared Harris",
-    ]
+    ],
+    isWatched: false,
 };
 
-const key = prompt("информация о фильме", "name");
+// const key = prompt("информация о фильме", "name");
+//
+// if (filmInfo[key]) {
+//     alert(filmInfo[key]);
+// } else {
+//     alert("нет информации");
+// }
 
-if (filmInfo[key]) {
-    alert(filmInfo[key]);
+const isWatch = confirm("понравился вам фильм?");
+filmInfo.isWatched = isWatch;
+
+if (filmInfo.isWatched) {
+    alert("Красавчик!");
 } else {
-    alert("нет информации");
+    alert("Ты много потерял! Посмотри.");
+    location.href = "https://youtu.be/0znaRSAFXOM";
+    // window.open("https://youtu.be/0znaRSAFXOM");
 }
