@@ -1,0 +1,38 @@
+.menu-items {
+  width: 100%;
+  min-width: 280px;
+  list-style: none;
+
+
+  &__item {
+    //width: 100%;
+    vertical-align: baseline;
+  }
+
+  &__link {
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 0 20px 28px;
+    border-top: 1px solid #979797;
+
+  }
+
+  &__img {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+  }
+
+  &__text {
+    margin-left: 13px;
+    line-height: 30px;
+    //color: #3D5170;
+    color: $textColor;
+    font-family: $basefont;
+  }
+
+}

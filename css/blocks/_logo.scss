@@ -1,4 +1,26 @@
 .logo {
   grid-area: logo;
 
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 24px 48px 20px 48px;
+  display: inline-block;
+  box-sizing: border-box;
+
+  &__icon-img{
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+    margin-right: 8px;
+  }
+  &__text{
+    display: inline-block;
+    vertical-align: center;
+    line-height: 20px;
+    color:$textColor;
+    font-family: $basefontPoppins;
+  }
+
 }

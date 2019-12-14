@@ -1,0 +1,26 @@
+.nav-foot {
+  &__list {
+    margin: 0 -20px;
+
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: $basefontRoboto;
+    font-weight: 500;
+    color: #007BFF;
+
+    &:visited {
+      color: #007BFF;
+
+    }
+  }
+
+
+}

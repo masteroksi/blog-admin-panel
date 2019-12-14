@@ -1,3 +1,15 @@
-.foot{
-  grid-area: fot;
+.foot {
+  grid-area: foot;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 0 26px 0 27px;
+
+  &__copyright-info {
+
+    &__text {
+      display: inline-block;
+    }
+  }
 }

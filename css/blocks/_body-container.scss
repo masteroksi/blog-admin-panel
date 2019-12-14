@@ -2,8 +2,18 @@
   display: grid;
   grid-template-areas: "logo header"
                         "nav-dashboards main-content"
-                        "nav-dashboards fot";
+                        "nav-dashboards foot";
   grid-template-columns: 285px 1fr;
   grid-template-rows: $headerHeight 1fr 69px;
-  min-height: 100vh;
+  //grid-auto-rows: minmax($headerHeight, auto);
+  //grid-auto-rows: minmax(100px, auto);
+  //min-height: 100vh;
+  //@media  (max-width: 640px){
+  //  grid-template-columns: 2fr 4fr;
+  //  grid-template-areas:  " header header"
+  //                        "nav-dashboards"
+  //                      " main-content"
+  //                      "foot foot";
+  //
+  //}
 }

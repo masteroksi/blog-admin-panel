@@ -1,15 +1,19 @@
 .search {
+  display: block;
+  padding: 0 26px 0;
 
-  &__img {
-    display: inline-block;
-    margin-right: 18px;
-    width: 14px;
-    height: 14px;
-  }
-
-  &__text {
-    display: inline-block;
-
+  &__input {
+    display: block;
+    padding: 26px 0 26px (14px + 9px);
+    line-height: 14px;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 13px;
+    background: url("../images/header-icons/search-icon.svg") left center no-repeat;
+    background-size: 14px 14px;
   }
 
 

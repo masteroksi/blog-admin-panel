@@ -6,11 +6,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-flow: row wrap;
+
 
   &__left {
     flex-grow: 1;
   }
   &__right {
 
+    white-space: nowrap;
   }
 }

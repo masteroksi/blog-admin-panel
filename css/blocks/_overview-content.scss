@@ -1,0 +1,20 @@
+.overview-content {
+  margin: 20px 0;
+  display: grid;
+  grid-auto-flow: column;
+  //grid-template-columns: repeat(auto-fill )  ;
+  //grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-column-gap: 20px;
+
+
+
+  &__item {
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0 2px 0 rgba(#5A6169, 0.11),
+                0 4px 8px rgba(#5A6169, 0.12),
+                0 10px 10px rgba(#5A6169, 0.06),
+                0 7px 70px rgba(#5A6169, .1);
+  }
+}
