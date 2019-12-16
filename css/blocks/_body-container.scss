@@ -8,12 +8,9 @@
   //grid-auto-rows: minmax($headerHeight, auto);
   //grid-auto-rows: minmax(100px, auto);
   //min-height: 100vh;
-  //@media  (max-width: 640px){
-  //  grid-template-columns: 2fr 4fr;
-  //  grid-template-areas:  " header header"
-  //                        "nav-dashboards"
-  //                      " main-content"
-  //                      "foot foot";
-  //
-  //}
+  @media  (max-width: 640px){
+    grid-template-columns: 2fr 4fr;
+    grid-column: 1/3;
+  }
+
 }
