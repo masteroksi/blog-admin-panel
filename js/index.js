@@ -8,6 +8,7 @@ const filmInfo = {
     duration: "56 min",
     country: "USA",
     "18+": false,
+    rating: 5,
     actors: [
         "Orlando Bloom",
         "Cara Delevingne",
@@ -38,6 +39,18 @@ if (filmInfo.isWatched) {
     alert("Красавчик!");
 } else {
     alert("Ты много потерял! Посмотри.");
-    location.href = "https://youtu.be/0znaRSAFXOM";
-    // window.open("https://youtu.be/0znaRSAFXOM");
+    // location.href = "https://youtu.be/0znaRSAFXOM";
 }
+
+function changeRating(rating) {
+    const newRating = Number(rating);
+    if (isNaN(newRating) || newRating > 5 || newRating < 1) {
+        return;
+    }
+
+    filmInfo.rating = newRating;
+}
+
+const newRating = prompt(`Поставь рейтинг фильма ${filmInfo.name}`);
+changeRating(newRating);
+
