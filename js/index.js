@@ -24,13 +24,6 @@ const filmInfo = {
     isWatched: false,
 };
 
-// const key = prompt("информация о фильме", "name");
-//
-// if (filmInfo[key]) {
-//     alert(filmInfo[key]);
-// } else {
-//     alert("нет информации");
-// }
 
 const isWatch = confirm("понравился вам фильм?");
 filmInfo.isWatched = isWatch;
