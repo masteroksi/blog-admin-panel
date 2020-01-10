@@ -1,0 +1,12 @@
+.new-draft-form{
+  padding: 16px 20px 15px;
+
+  &__field-comments{
+    margin: 22px 0 17px;
+    min-height: 295px;
+  }
+  &__submit-btn{
+    @extend %button-default;
+    @extend %button-default_blue;
+  }
+}

@@ -44,10 +44,10 @@
                     <span class="overview__numeral">2,390</span>
                     <span class="overview__percents"> 4.7%
                         <!--<svg width="16" height="8">-->
-                            <!--<path fill="#17C671" d="M4 0, 8 4, 0 4 Z"></path>-->
+                        <!--<path fill="#17C671" d="M4 0, 8 4, 0 4 Z"></path>-->
                         <!--</svg>-->
                         <!--<svg width="16" height="8">-->
-                            <!--<path fill="#C4183C" d="M0 0, 8 0, 4 4 Z"></path>-->
+                        <!--<path fill="#C4183C" d="M0 0, 8 0, 4 4 Z"></path>-->
                         <!--</svg>-->
                     </span>
                 </div>
@@ -83,42 +83,180 @@
                     <span class="overview__numeral">17,281</span>
                     <span class="overview__percents  overview__percents_red">2.4%</span>
                 </div>
-                <img class="overview__diagram overview__percents_red" src="images/chartline-diagram/Chart Line-blu.svg" alt="">
+                <img class="overview__diagram overview__percents_red" src="images/chartline-diagram/Chart Line-blu.svg"
+                     alt="">
             </li>
         </ul>
-        <!--main-content-->
-        <!--<div class="device-component">-->
-            <!--<div class="device-component__users">-->
-                <!--<div class="header-page-menu">-->
-                    <!--<h2 class="header-page-menu__title">Users</h2>-->
-                    <!--<div class="header-page-menu__burger">-->
-                        <!--<input class="hamburger-menu" type="checkbox">-->
-                        <!--<lable clas="hamburger-menu__btn" for="hamburger-menu"></lable>-->
-                        <!--<span class="hamburger-menu__line hamburger-menu__line_first"></span>-->
-                        <!--<span class="hamburger-menu__line hamburger-menu__line_second"></span>-->
-                        <!--<ul class="hamburger-menu__list">-->
-                            <!--<li class="hamburger-menu__item">-->
-                                <!--<a class="hamburger-menu__link" href="#">POSTS</a>-->
-                            <!--</li>-->
-                            <!--<li class="hamburger-menu__item">-->
-                                <!--<a class="hamburger-menu__link" href="#">POSTS</a>-->
-                            <!--</li>-->
 
-                        <!--</ul>-->
-                     <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="device-component__by-device"></div>-->
-        <!--</div>-->
         <div class="dashboard">
-            <div class="dashboard__col">1</div>
-            <div class="dashboard__col">2</div>
+            <div class="dashboard__col">
+                <section class="dashboard-header">
+                    <header class="dashboard-header__top">
+                        <h3 class="dashboard-header__title">Users</h3>
+                        <div class="dashboard-header__drag-drop-icon">
+                        </div>
+                    </header>
+                    <div class="dashboard-header__content">
+                        <div class="chart-components">
+                            <div class="chart-components__block-controls">
+                                <div class="chart-components__input-group">
+                                    <input class="chart-components__date chart-components__date_start" type="text"
+                                           pattern="[0-30]{6}" placeholder="Start Date">
+                                    <input class="chart-components__date chart-components__date_end" type="text"
+                                           placeholder="End Date">
+                                    <button class="chart-components__btn" type="button"></button>
+                                </div>
+                                <div class="chart-components__buttons">
+                                    <button class="chart-components__btn-report">View Full Report →</button>
+                                </div>
+                            </div>
+                            <div class="chart-components__background-diagram">
+                                <img class="chart-components__img-diagram" src="images/img-diagram/Chart.png"
+                                     srcset="images/img-diagram/Chart@2x.png 2x" alt="">
+                            </div>
 
-            <div class="dashboard__col">3</div>
-            <div class="dashboard__col">4</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="dashboard__col">
+                <section class="dashboard-header">
+                    <header class="dashboard-header__top">
+                        <h3 class="dashboard-header__title">Users by device</h3>
+                        <div class="dashboard-header__drag-drop-icon">
+                        </div>
+                    </header>
+                    <div class="dashboard-header__content">
+                        <div class="chart-components">
+                            <div class="chart-components__background-diagram chart-components__background-diagram_bottom">
+                                <img src="images/img-diagram/round-diagram.png" width="229"
+                                     srcset="images/img-diagram/round-diagram@2x.png 2x" alt="round diagram">
+                            </div>
+                            <div class="chart-components__block-controls chart-components__block-controls_bottom">
+                                <select name="filter">
+                                    <option value="last_week">Last week</option>
+                                </select>
+                                <div class="chart-components__buttons">
+                                    <button class="chart-components__btn-report  chart-components__btn-report_bold">View Full Report →</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="dashboard__col">
+                <section class="dashboard-header">
+                    <header class="dashboard-header__top">
+                        <h3 class="dashboard-header__title">New Draft</h3>
+                        <div class="dashboard-header__drag-drop-icon">
+                        </div>
+                    </header>
+                    <div class="dashboard-header__content">
+                        <form class="new-draft-form" action="">
+                            <input class="new-draft-form__input" placeholder="Brave New World" type="text">
+                            <textarea class="new-draft-form__field-comments" placeholder="Words can be like X-rays if you use them properly..." name=""></textarea>
+                            <div class="new-draft-form__buttons">
+                                <button class="new-draft-form__submit-btn" type="submit">Create Draft</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="dashboard__col">
+                <section class="dashboard-header">
+                    <header class="dashboard-header__top">
+                        <h3 class="dashboard-header__title">Discussions</h3>
+                        <div class="dashboard-header__drag-drop-icon">
+                        </div>
+                    </header>
+                    <div class="dashboard-header__content">
+                        <ul class="comments-list">
+                            <li class="comments-list__item">
+                                <article class="comments-list__comment-article">
+                                    <header class="comments-list__head" >
+                                        <img class="comments-list__img" src="images/avatar-img/1-avatar.png"  width="52px" srcset="images/avatar-img/1-avatar-2x.png 2x" alt="">
+                                    </header>
+                                    <div class="comments-list__comment-content">
+                                        <a class="comments-list__avatar-link" href="#"> James Johnson
+                                        </a>
+                                        <span class="comments-list__comment-text">on <b>Hello World!</b> – 3 days ago</span>
+                                        <span class="comments-list__comment-text">Well, the way they make shows is, they make one ...</span>
+                                        </div>
+                                    <footer class="comments-list__foot">
+                                        <div class="comments-list__btn-group"></div>
+
+                                    </footer>
+
+
+
+
+                                </article>
+                            </li>
+                        </ul>
+
+
+                            <li class="comments-list__item">
+                                <article class="comments-list__comment-wrap">
+                                    <header class="comments-list__head" >
+                                        <img class="comments-list__img" src="images/avatar-img/2-avatar.png"  width="52px"srcset="images/avatar-img/2-avatar@2x.png 2x" alt="">
+                                    </header>
+                                    <div class="comments-list__comment-content">
+                                        <span class="comments-list__avatar-name">James Johnson</span>
+                                        <span class="comments-list__comment-text">on <b>Hello World!</b> – 3 days ago</span>
+                                        <span class="comments-list__comment-text">Well, the way they make shows is, they make one ...</span>
+                                    </div>
+                                    <footer class="comments-list__foot">
+                                        <div class="comments-list__btn-group"></div>
+                                        <div class="chart-components__input-group">
+                                            <input class="chart-components__date chart-components__date_start" type="text"
+                                                   pattern="[0-30]{6}" placeholder="Start Date">
+                                            <input class="chart-components__date chart-components__date_end" type="text"
+                                                   placeholder="End Date">
+                                            <button class="chart-components__btn" type="button"></button>
+                                        </div>
+                                    </footer>
+                                </article>
+                            </li>
+
+
+
+
+                            <li class="comments-list__item">
+                                <article class="comments-list__comment-wrap">
+                                    <header class="comments-list__head" >
+                                        <img class="comments-list__img" src="images/avatar-img/3-avatar.png "width="52px" srcset="images/avatar-img/3-avatar@2x.png 2x" alt="">
+                                    </header>
+                                    <div class="comments-list__comment-content">
+                                        <span class="comments-list__avatar-name">James Johnson</span>
+                                        <span class="comments-list__comment-text">on <b>Hello World!</b> – 3 days ago</span>
+                                        <span class="comments-list__comment-text">Well, the way they make shows is, they make one ...</span>
+                                    </div>
+                                    <footer class="comments-list__foot">
+                                        <div class="comments-list__btn-group"></div>
+                                        <div class="chart-components__input-group">
+                                            <input class="chart-components__date chart-components__date_start" type="text"
+                                                   pattern="[0-30]{6}" placeholder="Start Date">
+                                            <input class="chart-components__date chart-components__date_end" type="text"
+                                                   placeholder="End Date">
+                                            <button class="chart-components__btn" type="button"></button>
+                                        </div>
+                                    </footer>
+                                </article>
+                            </li>
+
+
+
+
+
+                    </div>
+                </section>
+
+            </div>
             <div class="dashboard__col">5</div>
         </div>
-
 
 
     </main>
@@ -202,6 +340,6 @@
         </div>
     </footer>
 </div>
-<script src="js/index.js"></script>
+<!--<script src="js/index.js"></script>-->
 </body>
 </html>

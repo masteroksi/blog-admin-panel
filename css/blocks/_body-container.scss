@@ -8,6 +8,10 @@
   //grid-auto-rows: minmax($headerHeight, auto);
   //grid-auto-rows: minmax(100px, auto);
   //min-height: 100vh;
+  
+  @media screen and (max-width: 1150px) {
+    grid-template-columns: 225px 1fr;
+  }
   @media  (max-width: 640px){
     grid-template-columns: 2fr 4fr;
     grid-column: 1/3;
