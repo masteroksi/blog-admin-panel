@@ -8,7 +8,7 @@ const filmInfo = {
     duration: "56 min",
     country: "USA",
     "18+": false,
-    rating: 5,
+    rating: 5, // 1 - 5; 0 - не известный рейтинг
     actors: [
         "Orlando Bloom",
         "Cara Delevingne",
@@ -46,4 +46,3 @@ function changeRating(rating) {
 
 const newRating = prompt(`Поставь рейтинг фильма ${filmInfo.name}`);
 changeRating(newRating);
-
