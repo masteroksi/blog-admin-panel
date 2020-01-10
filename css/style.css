@@ -77,7 +77,7 @@ body {
   box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12), 0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1);
 }
 
-.new-draft-form__submit-btn, .chart-components__btn-report, .chart-components__btn {
+.comments-list__btn-approve, .comments-list__reject-btn, .comments-list__edit-btn, .new-draft-form__submit-btn, .chart-components__btn-report, .chart-components__btn {
   color: #3D5170;
   outline: none;
   text-decoration: none;
@@ -89,7 +89,7 @@ body {
   border-radius: 4px;
   font-size: 12px;
 }
-.new-draft-form__submit-btn:hover, .chart-components__btn-report:hover, .chart-components__btn:hover {
+.comments-list__btn-approve:hover, .comments-list__reject-btn:hover, .comments-list__edit-btn:hover, .new-draft-form__submit-btn:hover, .chart-components__btn-report:hover, .chart-components__btn:hover {
   background-color: whitesmoke;
 }
 .new-draft-form__submit-btn {
@@ -659,19 +659,18 @@ b {
 .comments-list__item {
   border-bottom: 1px solid #E0E2E8;
   margin-bottom: 5px;
-  padding: 16px 59px 17px 25px;
+  padding: 16px 25px 17px 25px;
   list-style: none;
+}
+.comments-list__item:last-child {
+  border-bottom: none;
 }
 .comments-list__comment-article {
   display: flex;
-  flex-wrap: wrap;
 }
 .comments-list__img {
   margin-right: 11px;
   vertical-align: center;
-}
-.comments-list__comment-content {
-  flex: 4 6 227px;
 }
 .comments-list__avatar-link {
   color: #5A6169;
@@ -685,10 +684,35 @@ b {
   color: #868E96;
   font-weight: 300;
   line-height: 13px;
+  padding: 10px 0 12px;
 }
-.comments-list__foot:nth-child(3) {
-  grid-column: 1/4;
-  grid-row: 3;
+.comments-list__btn-group {
+  box-sizing: border-box;
+  font-size: 11px;
+  display: flex;
+}
+.comments-list__btn-approve, .comments-list__reject-btn, .comments-list__edit-btn {
+  border-radius: 0;
+  border: 1px solid #BECAD6;
+  padding: 5px 10px 6px 22px;
+}
+.comments-list__btn-approve:first-child, .comments-list__reject-btn:first-child, .comments-list__edit-btn:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.comments-list__btn-approve:last-child, .comments-list__reject-btn:last-child, .comments-list__edit-btn:last-child {
+  border-radius: 0 4px 4px 0;
+}
+.comments-list__btn-approve {
+  background: url("../images/button-icon/check-Icon.svg") 6px 7px no-repeat;
+  background-size: 12px 12px;
+}
+.comments-list__reject-btn {
+  background: url("../images/button-icon/reject-con.svg") 6px 7px no-repeat;
+  background-size: 12px 12px;
+}
+.comments-list__edit-btn {
+  background: url("../images/button-icon/edit-Icon.svg") 6px 7px no-repeat;
+  background-size: 12px 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

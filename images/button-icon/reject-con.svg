@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Reject Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blog-Overview-Template" transform="translate(-1700.000000, -1801.000000)">
+            <g id="Discussions---Component" transform="translate(1351.000000, 1528.000000)">
+                <g id="Comment-1" transform="translate(0.000000, 119.000000)">
+                    <g id="Comment---Content" transform="translate(179.000000, 32.000000)">
+                        <g id="Actions---Button-Group" transform="translate(3.000000, 105.000000)">
+                            <g id="Reject" transform="translate(149.000000, 0.000000)">
+                                <g id="Reject-Icon" transform="translate(13.000000, 12.000000)">
+                                    <polygon id="Shape" fill="#C4183C" fill-rule="nonzero" points="19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12"></polygon>
+                                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
