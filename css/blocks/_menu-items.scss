@@ -1,12 +1,13 @@
 .menu-items {
   width: 100%;
-  //min-width: 280px;
   list-style: none;
 
-
   &__item {
-    //width: 100%;
-    vertical-align: baseline;
+    vertical-align: bottom;
+    border-top: 1px solid #E0E2E8;
+    padding: 19px 0 20px 28px;
+
+
   }
 
   &__link {
@@ -14,8 +15,6 @@
     width: 100%;
     display: inline-block;
     text-decoration: none;
-    padding: 20px 0 20px 28px;
-    border-top: 1px solid #979797;
 
   }
 
@@ -29,10 +28,12 @@
 
   &__text {
     margin-left: 13px;
-    line-height: 30px;
     //color: #3D5170;
     color: $textColor;
     font-family: $basefont;
+    line-height: 18px;
+    padding: 5px 0;
+
   }
 
 }

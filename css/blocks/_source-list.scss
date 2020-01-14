@@ -1,0 +1,25 @@
+.source-list{
+  //width: 100%;
+  //padding: 0  17px 0 20px;
+
+  &__item{
+    padding: 11px 17px 12px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    border-bottom: 1px solid #E0E2E8;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  &__col{}
+  &__text{
+    color: $darkGray;
+  }
+  &__count{
+    color: $transparentGray;
+  }
+
+
+}

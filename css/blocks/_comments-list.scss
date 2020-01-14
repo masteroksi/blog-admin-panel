@@ -9,13 +9,13 @@
     padding: 16px 25px 17px 25px;
     list-style: none;
 
+
     &:last-child {
       border-bottom: none;
     }
   }
   &__comment-article {
     display: flex;
-    //flex-wrap: wrap;
   }
 
   &__head {}
@@ -47,12 +47,9 @@
 
 
   &__btn-group{
-    //max-width: 195px;
     box-sizing: border-box;
-    //border-radius: 4px;
     font-size: 11px;
     display:flex;
-    //justify-content: space-between;
 
 
   }
@@ -84,6 +81,11 @@
   &__edit-btn {
     background: url("../images/button-icon/edit-Icon.svg") 6px 7px no-repeat;
     background-size: 12px 12px;
+  }
+  &__foot{
+
+
+
   }
 
 }

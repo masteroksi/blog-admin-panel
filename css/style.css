@@ -77,7 +77,7 @@ body {
   box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12), 0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1);
 }
 
-.comments-list__btn-approve, .comments-list__reject-btn, .comments-list__edit-btn, .new-draft-form__submit-btn, .chart-components__btn-report, .chart-components__btn {
+.comments-list__btn-approve, .comments-list__reject-btn, .comments-list__edit-btn, .new-draft-form__submit-btn, .chart-components__btn {
   color: #3D5170;
   outline: none;
   text-decoration: none;
@@ -89,7 +89,7 @@ body {
   border-radius: 4px;
   font-size: 12px;
 }
-.comments-list__btn-approve:hover, .comments-list__reject-btn:hover, .comments-list__edit-btn:hover, .new-draft-form__submit-btn:hover, .chart-components__btn-report:hover, .chart-components__btn:hover {
+.comments-list__btn-approve:hover, .comments-list__reject-btn:hover, .comments-list__edit-btn:hover, .new-draft-form__submit-btn:hover, .chart-components__btn:hover {
   background-color: whitesmoke;
 }
 .new-draft-form__submit-btn {
@@ -313,15 +313,15 @@ b {
   list-style: none;
 }
 .menu-items__item {
-  vertical-align: baseline;
+  vertical-align: bottom;
+  border-top: 1px solid #E0E2E8;
+  padding: 19px 0 20px 28px;
 }
 .menu-items__link {
   box-sizing: border-box;
   width: 100%;
   display: inline-block;
   text-decoration: none;
-  padding: 20px 0 20px 28px;
-  border-top: 1px solid #979797;
 }
 .menu-items__img {
   display: inline-block;
@@ -332,9 +332,10 @@ b {
 }
 .menu-items__text {
   margin-left: 13px;
-  line-height: 30px;
   color: #3D5170;
   font-family: "San Francisco", Arial, sans-serif;
+  line-height: 18px;
+  padding: 5px 0;
 }
 
 .nav-foot__list {
@@ -441,6 +442,7 @@ b {
 .page-title__title {
   font-weight: 700;
   font-size: 24px;
+  line-height: 34px;
   color: #3D5170;
 }
 
@@ -586,6 +588,14 @@ b {
   left: 0;
   bottom: 0;
 }
+.dashboard-header__content {
+  align-content: end;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .chart-components {
   display: flex;
   flex-direction: column;
@@ -628,14 +638,6 @@ b {
   background: #fff url("../images/calendar-icon.svg") center no-repeat;
   background-size: 12px 13px;
 }
-.chart-components__btn-report {
-  border: 1px solid #BECAD6;
-  border-radius: 4px;
-  padding: 8px 20px;
-  text-align: left;
-  font-size: 13px;
-  font-weight: bold;
-}
 .chart-components__background-diagram {
   background-color: #fff;
   padding: 20px 15px;
@@ -650,7 +652,7 @@ b {
 }
 .new-draft-form__field-comments {
   margin: 22px 0 17px;
-  min-height: 295px;
+  min-height: 274px;
 }
 .comments-list {
   box-sizing: border-box;
@@ -713,6 +715,63 @@ b {
 .comments-list__edit-btn {
   background: url("../images/button-icon/edit-Icon.svg") 6px 7px no-repeat;
   background-size: 12px 12px;
+}
+.source-list__item {
+  padding: 11px 17px 12px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  border-bottom: 1px solid #E0E2E8;
+}
+.source-list__item:last-child {
+  border-bottom: none;
+}
+.source-list__text {
+  color: #3D5170;
+}
+.source-list__count {
+  color: #818EA3;
+}
+
+.buttons {
+  color: #3D5170;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  font-family: "San Francisco", Arial, sans-serif;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.buttons:hover {
+  background-color: whitesmoke;
+}
+.buttons_blue {
+  padding: 8px 15px;
+  background-color: #007BFF;
+  color: #fff;
+}
+.buttons_blue:hover {
+  background-color: #0071eb;
+}
+.buttons__btn-report {
+  border: none;
+  color: #3D5170;
+  border-radius: 4px;
+  padding: 8px 20px;
+  text-align: left;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.dashboard-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 25px 17px 25px;
+  border-top: 1px solid #E0E2E8;
 }
 
 /*# sourceMappingURL=style.css.map */

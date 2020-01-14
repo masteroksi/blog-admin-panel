@@ -56,16 +56,6 @@
 
   }
 
-  &__btn-report {
-    @extend %button-default;
-    border: 1px solid #BECAD6;
-    border-radius: 4px;
-    padding: 8px 20px;
-    text-align: left;
-    font-size: 13px;
-    font-weight: bold;
-  }
-
   &__background-diagram {
     background-color: $white;
     padding: 20px 15px;

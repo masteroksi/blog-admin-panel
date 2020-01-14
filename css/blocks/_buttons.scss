@@ -1,0 +1,36 @@
+.buttons{
+  color: $textColor;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  font-family: $basefont;
+  text-align: center;
+  cursor: pointer;
+  background-color: $white;
+  border-radius: 4px;
+  font-size: 12px;
+
+  &:hover {
+    background-color: darken($white, 4);
+  }
+
+  &_blue {
+    padding: 8px 15px;
+    background-color: $blue;
+    color: $white;
+    &:hover{
+      background-color: darken($blue, 4);
+    }
+  }
+
+  &__btn-report{
+    border: none;
+    color:$darkGray ;
+    border-radius: 4px;
+    padding: 8px 20px;
+    text-align: left;
+    font-size: 13px;
+    white-space: nowrap;
+    //font-weight: bold;
+  }
+}

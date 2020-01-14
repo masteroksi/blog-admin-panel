@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>blog-admin-panel</title>
+    <title>blog admin panel</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 
@@ -43,12 +43,6 @@
                     <span class="overview__title">POSTS</span>
                     <span class="overview__numeral">2,390</span>
                     <span class="overview__percents"> 4.7%
-                        <!--<svg width="16" height="8">-->
-                        <!--<path fill="#17C671" d="M4 0, 8 4, 0 4 Z"></path>-->
-                        <!--</svg>-->
-                        <!--<svg width="16" height="8">-->
-                        <!--<path fill="#C4183C" d="M0 0, 8 0, 4 4 Z"></path>-->
-                        <!--</svg>-->
                     </span>
                 </div>
                 <img class="overview__diagram" src="images/chartline-diagram/Chart Line.svg" alt="">
@@ -91,7 +85,7 @@
         <div class="dashboard">
             <div class="dashboard__col">
                 <section class="dashboard-header">
-                    <header class="dashboard-header__top">
+                    <header class="dashboard-header__top ">
                         <h3 class="dashboard-header__title">Users</h3>
                         <div class="dashboard-header__drag-drop-icon">
                         </div>
@@ -107,7 +101,7 @@
                                     <button class="chart-components__btn" type="button"></button>
                                 </div>
                                 <div class="chart-components__buttons">
-                                    <button class="chart-components__btn-report">View Full Report →</button>
+                                    <button class="buttons__btn-report">View Full Report →</button>
                                 </div>
                             </div>
                             <div class="chart-components__background-diagram">
@@ -132,13 +126,14 @@
                                 <img src="images/img-diagram/round-diagram.png" width="229"
                                      srcset="images/img-diagram/round-diagram@2x.png 2x" alt="round diagram">
                             </div>
-                            <div class="chart-components__block-controls chart-components__block-controls_bottom">
-                                <select name="filter">
-                                    <option value="last_week">Last week</option>
-                                </select>
-                                <div class="chart-components__buttons">
-                                    <button class="chart-components__btn-report  chart-components__btn-report_bold">View Full Report →</button>
-                                </div>
+                        </div>
+                        <!-- control -->
+                        <div class="dashboard-footer">
+                            <select name="filter">
+                                <option value="last_week">Last week</option>
+                            </select>
+                            <div class="chart-components__buttons">
+                                <button class="buttons__btn-report  buttons__btn-report_bold">View Full Report →</button>
                             </div>
                         </div>
                     </div>
@@ -225,22 +220,110 @@
                                 </article>
                             </li>
                         </ul>
-                        <div class="chart-components">
-                            <div class="chart-components__block-controls chart-components__block-controls_bottom">
-                                <select name="filter">
-                                    <option value="last_week">Last week</option>
-                                </select>
-                                <div class="chart-components__buttons">
-                                    <button class="chart-components__btn-report  chart-components__btn-report_bold">View Full Report →</button>
-                                </div>
-                            </div>
+                        <!-- control -->
+                        <div class="dashboard-footer">
+                            <select name="filter">
+                                <option value="last_week">Last week</option>
+                            </select>
+                            <button class="buttons__btn-report">View Full Report →</button>
                         </div>
-
                     </div>
                 </section>
 
             </div>
-            <div class="dashboard__col">5</div>
+            <div class="dashboard__col">
+                <section class="dashboard-header">
+                    <header class="dashboard-header__top">
+                        <h3 class="dashboard-header__title">Top Referrals</h3>
+                        <div class="dashboard-header__drag-drop-icon">
+                        </div>
+                    </header>
+                    <div class="dashboard-header__content">
+                        <ul class="source-list">
+                            <li class="source-list__item">
+                                <div class="source-list__col">
+                                    <span class="source-list__text">GitHub</span>
+                                </div>
+                                <div class="source-list__col">
+                                    <span class="source-list__count">19,291</span>
+                                </div>
+                            </li>
+                            <li class="source-list__item">
+                                <div class="source-list__col">
+                                    <span class="source-list__text">Stack Overflow</span>
+                                </div>
+                                <div class="source-list__col">
+                                    <span class="source-list__count">11,201</span>
+                                </div>
+                            </li>
+                            <li class="source-list__item">
+                                <div class="source-list__col">
+                                    <span class="source-list__text">Hacker News</span>
+                                </div>
+                                <div class="source-list__col">
+                                    <span class="source-list__count">9,291</span>
+                                </div>
+                            </li>
+                            <li class="source-list__item">
+                                <div class="source-list__col">
+                                    <span class="source-list__text">Reddit</span>
+                                </div>
+                                <div class="source-list__col">
+                                    <span class="source-list__count">8,281</span>
+                                </div>
+                            </li>
+                            <li class="source-list__item">
+                                <div class="source-list__col">
+                                    <span class="source-list__text">The Next Web</span>
+                                </div>
+                                <div class="source-list__col">
+                                    <span class="source-list__count">7,128</span>
+                                </div>
+                            </li>
+                            <li class="source-list__item">
+                                <div class="source-list__col">
+                                    <span class="source-list__text">Tech Crunch</span>
+                                </div>
+                                <div class="source-list__col">
+                                    <span class="source-list__count">6,218</span>
+                                </div>
+                            </li>
+                            <li class="source-list__item">
+                                <div class="source-list__col">
+                                    <span class="source-list__text">Forbes</span>
+                                </div>
+                                <div class="source-list__col">
+                                    <span class="source-list__count">2,128</span>
+                                </div>
+                            </li>
+                            <li class="source-list__item">
+                                <div class="source-list__col">
+                                    <span class="source-list__text">YouTube</span>
+                                </div>
+                                <div class="source-list__col">
+                                    <span class="source-list__count">1,218</span>
+                                </div>
+                            </li>
+                            <li class="source-list__item">
+                                <div class="source-list__col">
+                                    <span class="source-list__text">Adobe Blog</span>
+                                </div>
+                                <div class="source-list__col">
+                                    <span class="source-list__count">829</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- control -->
+                        <div class="dashboard-footer">
+                            <select name="filter">
+                                <option value="last_week">Last week</option>
+                            </select>
+                            <button class="buttons__btn-report">Full Report →</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
 
 

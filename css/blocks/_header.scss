@@ -1,7 +1,9 @@
 .header {
   grid-area: header;
   background-color: $white;
-  box-shadow: 0 5px 19px rgba(90, 97, 105, 0.12);
+  //box-shadow: 0 5px 19px rgba(90, 97, 105, 0.12);
+  box-shadow: 0 5px 19px  rgba(#5A6169, 0.12);
+  //box-shadow: 0 2px 0  rgba(#E1E5EB, 0.10);
 
   display: flex;
   justify-content: space-between;
@@ -13,7 +15,6 @@
     flex-grow: 1;
   }
   &__right {
-
     white-space: nowrap;
   }
 }
