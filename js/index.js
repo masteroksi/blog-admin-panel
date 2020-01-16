@@ -46,3 +46,11 @@ function changeRating(rating) {
 
 const newRating = prompt(`Поставь рейтинг фильма ${filmInfo.name}`);
 changeRating(newRating);
+
+
+let cars = ["mersedes", "audi", "ford"];
+let vegetable = ["avocado", "tomato", "olive", "peper"];
+let figures = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+let index = 0;
+console.log(figures.length);
+

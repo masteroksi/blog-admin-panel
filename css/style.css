@@ -151,16 +151,12 @@ b {
   grid-template-areas: "logo header" "nav-dashboards main-content" "nav-dashboards foot";
   grid-template-columns: 285px 1fr;
   grid-template-rows: 68px 1fr 69px;
+  grid-auto-rows: minmax(100px, auto);
+  min-height: 100vh;
 }
 @media screen and (max-width: 1150px) {
   .body-container {
     grid-template-columns: 225px 1fr;
-  }
-}
-@media (max-width: 640px) {
-  .body-container {
-    grid-template-columns: 2fr 4fr;
-    grid-column: 1/3;
   }
 }
 
