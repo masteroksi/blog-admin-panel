@@ -56,10 +56,10 @@
   &__btn-approve,
   &__reject-btn,
   &__edit-btn {
-    @extend %button-default;
+    @extend .btn;
+    @extend .btn_border;
     border-radius: 0;
     //padding-left: 22px;
-    border: 1px solid #BECAD6;
     padding: 5px 10px 6px 22px;
 
     &:first-child {

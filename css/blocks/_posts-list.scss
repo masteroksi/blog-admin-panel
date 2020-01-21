@@ -1,0 +1,25 @@
+.posts-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+
+  &__item{
+    margin: 12px;
+    flex-basis: calc(25% - 24px);
+
+
+
+    &:nth-child(5),
+    &:nth-child(6) {
+      flex-basis: calc(50% - 24px);
+    }
+
+    &:nth-child(7),
+    &:nth-child(8),
+    &:nth-child(9) {
+      flex-basis: calc((100% / 3) - 24px);
+    }
+  }
+
+
+}

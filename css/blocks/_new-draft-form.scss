@@ -6,7 +6,7 @@
     min-height: 274px;
   }
   &__submit-btn{
-    @extend %button-default;
-    @extend %button-default_blue;
+    @extend .btn;
+    @extend .btn_blue;
   }
 }

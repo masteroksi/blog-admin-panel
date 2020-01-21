@@ -44,7 +44,7 @@
   }
 
   &__btn {
-    @extend %button-default;
+    @extend .btn;
     box-sizing: border-box;
     width: 33px;
     vertical-align: baseline;

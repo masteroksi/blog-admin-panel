@@ -17,18 +17,27 @@
 //     }
 // }
 
+var a = undefined; // не присвоено значение
+a = null; // нет значения
+a = NaN; // число которое не число
+
 function getRecommendation(rating) {
     const ratingNumber = Number(rating); // number / NaN
     if (isNaN(ratingNumber) || ratingNumber < 1 || ratingNumber > 5) {
         return 'Не известный рейтинг';
     }
+    // ratingNumber = 1 2 3 4 5 1.8
     const responses = [
-        'Плохой фильм',
-        'Так себе фильм',
-        'Нормальный фильм',
-        'Хороший фильм',
-        'Супер фильм'
+        'Плохой фильм', // 0
+        'Так себе фильм', // 1
+        'Нормальный фильм', // 2
+        'Хороший фильм', // 3
+        'Супер фильм' // 4
     ];
+    // responses[0] // 'Плохой фильм'
+    // responses[1] // 'Так себе фильм'
+    // ...
+    // responses[4] // 'Супер фильм'
     return responses[Math.round(ratingNumber) - 1];
 }
 
