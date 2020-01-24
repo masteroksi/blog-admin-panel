@@ -1,4 +1,4 @@
-function numberGenerate(from, to) {
+function generateNumber(from, to) {
     return Math.round(Math.random() * (to - from) + from);
 }
 
@@ -19,13 +19,13 @@ function makeCard(type, name = '', lastname = '') {
     }
 
     const cardName = `${name} ${lastname}`.toUpperCase().trim();
-    const month = normolizeNumber(numberGenerate(1, 12));
-    const year = [30, 29, 28, 34][numberGenerate(0, 3)];
+    const month = normolizeNumber(generateNumber(1, 12));
+    const year = [30, 29, 28, 34][generateNumber(0, 3)];
     return {
         type: type.toUpperCase(),
         name: cardName,
         expire: `${month}/${year}`,
-        cvv: numberGenerate(100, 999)
+        cvv: generateNumber(100, 999)
     }
 }
 const myCard = makeCard('visa', 'Oksana', 'Tymchuk');
