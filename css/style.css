@@ -810,6 +810,17 @@ b {
   position: absolute;
   right: 15px;
   top: 15px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.post-preview__category_background-azure {
+  background-color: #00B8D8;
+}
+.post-preview__category_background-purple {
+  background-color: #674EEC;
+}
+.post-preview__category_background-orange {
+  background-color: #FFB400;
 }
 .post-preview__content {
   position: relative;
@@ -819,8 +830,8 @@ b {
 }
 .post-preview__title-link {
   font-size: 20px;
-  color: #3D5170;
   text-decoration: none;
+  color: #2B394F;
 }
 .post-preview__text {
   padding: 0 20px;
