@@ -5,13 +5,13 @@ function transformString(str) {
     while (i >= 0) {
         let letter = str[i];
         if (isLastWord) {
-            letter = str[i].toUpperCase();
+            letter = letter.toUpperCase();
         }
 
         if (letter === ' ') {
             isLastWord = false;
         }
-        console.log(str[i]);
+        console.log(letter);
         result =  letter + '-' + result;
         i--;
     }
