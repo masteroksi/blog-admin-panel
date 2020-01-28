@@ -1,3 +1,10 @@
+// Math.random() * (10 - 1) + 1
+// Math.random() * (9) + 1
+// 0.67 * 9 + 1
+// 6.03 + 1
+// 7.03
+// 7
+
 function generateNumber(from, to) {
     return Math.round(Math.random() * (to - from) + from);
 }
