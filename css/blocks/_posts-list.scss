@@ -12,6 +12,7 @@
     &:nth-child(5),
     &:nth-child(6) {
       flex-basis: calc(50% - 24px);
+      flex-grow: 2;
     }
 
     &:nth-child(7),

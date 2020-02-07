@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+}
+.toodo {
+    padding: 5px;
+    width: 50%;
+    margin: auto;
+}
+
+.toodo__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toodo__item {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.toodo__text {
+    display: inline-block;
+}
+
+.toodo__done {
+}
+.toodo__delete{}
+.toodo__form{
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    grid-gap: 10px;
+}
+.toodo__field{}
+.toodo__add{}
+

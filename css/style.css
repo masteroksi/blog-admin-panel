@@ -783,6 +783,7 @@ b {
 }
 .posts-list__item:nth-child(5), .posts-list__item:nth-child(6) {
   flex-basis: calc(50% - 24px);
+  flex-grow: 2;
 }
 .posts-list__item:nth-child(7), .posts-list__item:nth-child(8), .posts-list__item:nth-child(9) {
   flex-basis: calc((100% / 3) - 24px);
