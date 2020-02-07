@@ -1,8 +1,8 @@
 body{
     margin: 0;
     background-color: #E1E5EB;
-    display: flex;
-    height: 100vh;
+    /*display: flex;*/
+    /*height: 100vh;*/
     padding: 0;
 }
 .ball{
