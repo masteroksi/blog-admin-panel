@@ -823,6 +823,9 @@ b {
 .post-preview__category_background-orange {
   background-color: #FFB400;
 }
+.post-preview__category_without-category {
+  display: none;
+}
 .post-preview__content {
   position: relative;
 }
@@ -879,10 +882,25 @@ b {
   display: none;
 }
 .post-preview__bookmark {
-  padding: 6px 14px 6px 25px;
+  box-sizing: border-box;
+  padding: 6px 14px 6px 8px;
+}
+.post-preview__bookmark-flag-icon {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 8px;
+}
+.post-preview__bookmark-text {
+  display: inline-block;
+  line-height: 18px;
+  font-family: "San Francisco", Arial, sans-serif;
 }
 .post-preview__text-footer {
   display: none;
+  color: #868E96;
+}
+.post-preview__username-foot, .post-preview__category-foot {
+  color: #3D5170;
 }
 .post-preview_vertical {
   display: grid;
@@ -921,6 +939,19 @@ b {
   display: none;
 }
 .post-preview_no-image .post-preview__buttons {
+  display: block;
+}
+.post-preview_without-category .post-preview__footer {
+  border-top: 1px solid #E1E5EB;
+  padding-top: 13px;
+}
+.post-preview_without-category .post-preview__category {
+  display: none;
+}
+.post-preview_without-category .post-preview__user {
+  display: none;
+}
+.post-preview_without-category .post-preview__text-footer {
   display: block;
 }
 

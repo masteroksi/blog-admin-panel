@@ -1,0 +1,17 @@
+.drop-down-btn{
+    color: #0071eb;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #BECAD6;
+
+}
+li{
+    margin: 5px 0;
+    cursor: pointer;
+}
