@@ -1,4 +1,12 @@
-.drop-down-btn{
+
+.wrap-container {
+    margin: 0 auto;
+    width: 650px;
+    text-align: center;
+}
+
+
+.drop-down-btn {
     color: #0071eb;
     outline: none;
     text-decoration: none;
@@ -7,11 +15,82 @@
     background-color: #ffffff;
     border-radius: 4px;
     font-size: 16px;
-    padding: 5px 10px;
+    padding: 5px 20px;
     border: 1px solid #BECAD6;
 
 }
-li{
-    margin: 5px 0;
-    cursor: pointer;
+
+ul {
+    width: 100%;
+    min-height: 160px;
+    text-align: left;
 }
+
+.item-menu {
+    display: block;
+    line-height: 20px;
+    list-style: url("../images/button-icon/edit-Icon.svg") inside;
+    margin: 5px 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+
+}
+
+.sub-menu {
+    max-width: 130px;
+}
+
+
+.sub-menu:hover {
+    background-color: #E1E5EB;
+}
+
+.popover {
+    width: 100%;
+    /*display: block;*/
+    position: absolute;
+    z-index: 100;
+    top: -2px;
+    left: 169px;
+    max-width: 400px;
+    padding: 2px;
+    /*text-align: center;*/
+}
+.hidden{
+    display: none;
+}
+
+.popover-title {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15px 10px 0;
+    font-size: 12px;
+    line-height: 14px;
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.2);*/
+
+
+}
+
+.popover-content {
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 100%;
+    /*border: 1px solid rgba(0, 0, 0, 0.2);*/
+
+}
+
+.popover-content-img {
+    object-fit: contain;
+    object-position: top;
+    display: block;
+    width: 100%;
+
+}
+
+
+
