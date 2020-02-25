@@ -1,0 +1,10 @@
+.newpost-content{
+  padding: 0 27px 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 27px;
+
+  //width: 100px;
+  //height: 100px;
+}

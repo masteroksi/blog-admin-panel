@@ -49,11 +49,13 @@
 //         showLine(subList, delay);
 //         return;
 //     }
-//     setTimeout(() => {
-//         document.querySelector('.js-time').innerHTML = delay;
-//         children.forEach((el) => el.classList.remove('hidden'));
-//         children.forEach((el) => showLine(el, delay + 1000));
-//     }, delay);
+    setTimeout(() => {
+        document.querySelector('.js-time').innerHTML = delay;
+        children.forEach((el) => {
+            showLine(el, delay + 1000)
+            el.classList.remove('hidden')
+        });
+    }, delay);
 // }
 
 

@@ -24,31 +24,31 @@ body {
   0 7px 70px rgba(#5A6169, .1);
 }
 
-//%button-default {
-//  color: $textColor;
-//  outline: none;
-//  text-decoration: none;
-//  border: none;
-//  font-family: $basefont;
-//  text-align: center;
-//  cursor: pointer;
-//  background-color: $white;
-//  border-radius: 4px;
-//  font-size: 12px;
-//
-//  &:hover {
-//    background-color: darken($white, 4);
-//  }
-//
-//  &_blue {
-//    padding: 8px 15px;
-//    background-color: $blue;
-//    color: $white;
-//    &:hover{
-//      background-color: darken($blue, 4);
-//    }
-//  }
-//}
+%button-default {
+  color: $textColor;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  font-family: $basefont;
+  text-align: center;
+  cursor: pointer;
+  background-color: $white;
+  border-radius: 4px;
+  font-size: 12px;
+
+  &:hover {
+    background-color: darken($white, 4);
+  }
+
+  &_blue {
+    padding: 8px 15px;
+    background-color: $blue;
+    color: $white;
+    &:hover{
+      background-color: darken($blue, 4);
+    }
+  }
+}
 
 .btn {
   color: $textColor;
@@ -107,6 +107,7 @@ textarea {
 
   &::placeholder {
     color: $lightGray;
+
   }
 
   &:focus {

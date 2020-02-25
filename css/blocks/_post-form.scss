@@ -1,0 +1,33 @@
+.post-form{
+  border-radius: 9px;
+  overflow: hidden;
+  position: relative;
+  background-color: $white;
+  //width: 100%;
+  padding: 16px;
+
+  &__wrap{
+    border: 1px solid #E0E2E8;
+    margin-top: 25px;
+
+  }
+
+  &__input-post-title{
+    padding: 13px;
+    border: 1px solid #E0E2E8;
+
+  }
+  &__symbol{}
+  &__comment{
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #BECAD6;
+    font-size: 13px;
+    color: #3D5170;
+    padding: 9px 13px;
+    resize: none;
+  }
+}
