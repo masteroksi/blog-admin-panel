@@ -4,12 +4,44 @@
     <meta charset="UTF-8">
     <title>Articles</title>
     <style>
-        title{
-            color: red;
-        }
         body {
+            font-family: basefont;
             /*font-size: 12px;*/
             color: #3D5170;
+        }
+
+        form {
+            margin-top: 60px;
+            max-width: 500px;
+            border-radius: 9px;
+            border: 1px solid #17C671;
+            overflow: hidden;
+            padding: 16px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 5px;
+        }
+
+        time {
+            display: inline-block;
+            vertical-align: top;
+            line-height: 36px;
+        }
+
+        .btn {
+            color: #3D5170;
+            outline: none;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 4px;
+            border: 1px solid #007BFF;
+            font-size: 12px;
+            max-width: 102px;
+            padding: 6px 17px 8px 17px;
         }
 
         .articles {
@@ -83,9 +115,41 @@
     </style>
 </head>
 <body>
-<h1>Articles</h1>
 <div class="articles js-articles">
+    <ul class="postsList">
+        <li class="postsItem">
+            <h3 class="postsTitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+            <p class="postsText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto saepe
+                voluptate similique vel et nihil numquam.
+                orem ipsum dolor sit amet, consectetur adipisicing elit. Iusto saepe
+                voluptate similique vel et nihil numquam.
+            </p>
+            <span class="postAuthor">Mikki</span>
+            <ul class="commentsList">
+                <li class="commentsItem">
+                    <img class="commentsImg" src="" alt="">
+                    <span class="commentsName">Maik</span>
+                    <span class="commentsEmail">e@gmail.com</span>
+                    <time datetime="2020-04-03">April 3, 2020</time>
+                    <p class="commentsText">hhhhhhhhhh</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
 </div>
+
+<form action="" class="form">
+    <div>
+        <label for=""></label>
+    </div>
+    <div>
+        <textarea name="comment" id="" cols="30" rows="10" placeholder="Add comment"></textarea>
+    </div>
+    <button class="btn" type="submit">submit</button>
+    <button class="btn" type="delit">submit</button>
+
+</form>
+
 <script src="xhr.js"></script>
 </body>
 </html>
