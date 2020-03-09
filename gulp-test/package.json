@@ -1,0 +1,14 @@
+{
+  "name": "gulp-test",
+  "version": "0.0.1",
+  "description": "test gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "oksi",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
