@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   &__block-controls {
     display: flex;
     justify-content: space-between;
@@ -35,6 +36,7 @@
     outline: none;
     border: none;
     border-right: 1px solid #BECAD6;
+    font-family: $basefont;
 
     &_start {
     }
@@ -44,7 +46,6 @@
   }
 
   &__btn {
-    @extend .btn;
     box-sizing: border-box;
     width: 33px;
     vertical-align: baseline;

@@ -26,7 +26,7 @@
                 <span class="notification__img-icon"></span>
             </div>
             <div class="user-details">
-                <img class="user-details__img-avatar" src="images/header-icons/user-avatar.png "
+                <img class="user-details__img-avatar" src="images/header-icons/user-avatar@2x.png"
                      srcset=" images/header-icons/user-avatar@2x.png 2x" width="40" height="40" alt="avatar">
                 <span class="user-details__name-user">Sierra Brooks</span>
             </div>
@@ -94,11 +94,11 @@
                         <div class="chart-components">
                             <div class="chart-components__block-controls">
                                 <div class="chart-components__input-group">
-                                    <input class="chart-components__date chart-components__date_start" type="text"
+                                    <input class="chart-components__date chart-components__date_start" type="date"
                                            pattern="[0-30]{6}" placeholder="Start Date">
-                                    <input class="chart-components__date chart-components__date_end" type="text"
+                                    <input class="chart-components__date chart-components__date_end" type="date"
                                            placeholder="End Date">
-                                    <button class="chart-components__btn" type="button"></button>
+                                    <span class="chart-components__btn"></span>
                                 </div>
                                 <div class="chart-components__buttons">
                                     <button class="buttons__btn-report">View Full Report →</button>
@@ -330,21 +330,21 @@
     </main>
     <aside class="nav-dashboards">
         <ul class="menu-items">
-            <li class="menu-items__item">
-                <a class="menu-items__link" href="#">
+            <li class="menu-items__item menu-items__item_active">
+                <a class="menu-items__link" href="index.html">
                     <img class="menu-items__img" src="images/asaid-nav-icon/blog-Icon-pen.svg" alt="">
                     <span class="menu-items__text">Blog Dashboard</span>
                 </a>
             </li>
             <li class="menu-items__item">
-                <a class="menu-items__link" href="#">
+                <a class="menu-items__link" href="blog-posts.html">
                     <!--<span class="menu-items__icon"></span>-->
                     <img class="menu-items__img" src="images/asaid-nav-icon/blog-Posts-Icon.svg" alt="">
                     <span class="menu-items__text">Blog Posts</span>
                 </a>
             </li>
             <li class="menu-items__item">
-                <a class="menu-items__link" href="#">
+                <a class="menu-items__link" href="new-post.html">
                     <!--<span class="menu-items__icon"></span>-->
                     <img class="menu-items__img" src="images/asaid-nav-icon/new-Post-Icon.svg" alt="">
                     <span class="menu-items__text">Add New Post</span>
@@ -408,6 +408,7 @@
         </div>
     </footer>
 </div>
-<!--<script src="js/index.js"></script>-->
+<script src="js/lib/Chart.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
