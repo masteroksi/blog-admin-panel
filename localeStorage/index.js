@@ -16,9 +16,24 @@ function getValue() {
 
 function createElement(text) {
     const li = document.createElement('li');
-    li.innerText = text;
+    const label = document.createElement('label');
+
+    const checkBox = document.createElement('input');
+    checkBox.type = 'checkbox';
+    const span = document.createElement('span');
+    span.innerText = text;
+    label.appendChild(checkBox);
+    label.appendChild(span);
+
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.innerText = 'x';
+    li.appendChild(label);
+    li.appendChild(deleteBtn);
     return li;
+
 }
+
 
 function addCache(text) {
     const cache = localStorage.getItem('comments');
@@ -33,19 +48,37 @@ function addCache(text) {
     }
 }
 
-addButton.addEventListener('click', ev => {
+const submitNewItem = ev => {
     let text = getValue();
     if (text) {
         let li = createElement(text);
         list.appendChild(li);
     }
-});
+};
+addButton.addEventListener('click', submitNewItem);
 
 resetButton.addEventListener('click', ev => {
     localStorage.removeItem('comments');
     list.innerHTML = '';
 });
-
+input.addEventListener('keydown', ev => {
+    if (ev.key === 'Enter') {
+        submitNewItem();
+    }
+});
+list.addEventListener('change', ev => {
+    const checkBox = ev.target;
+    if (checkBox.checked) {
+        checkBox.parentNode.classList.add('checked');
+    } else {
+        checkBox.parentNode.classList.remove('checked');
+    }
+});
+list.addEventListener('click', ev => {
+    if (ev.target.tagName === 'BUTTON') {
+        ev.target.parentNode.remove()
+    }
+});
 const cache = localStorage.getItem('comments');
 if (cache) {
     const comments = JSON.parse(cache);
@@ -56,11 +89,5 @@ if (cache) {
 }
 
 
-// localStorage.setItem('data',5);
-// console.log(localStorage.getItem('data'));
-// const a =[3, 4, 5];
-// localStorage.setItem('a', JSON.stringify(a));
-// let b = localStorage.getItem('a');
-// b = JSON.parse(b);
 
 
