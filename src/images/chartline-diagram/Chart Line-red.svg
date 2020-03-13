@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="384px" height="135px" viewBox="0 0 384 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Chart Line</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.1" opacity="0.5">
+        <g id="Blog-Overview-Template" transform="translate(-1928.000000, -480.000000)" fill="#FF4169" stroke="#FF4169" stroke-width="3">
+            <g id="Blog-Overview---Component(s)" transform="translate(625.000000, 334.000000)">
+                <g id="Users---Small-Metric" transform="translate(1303.000000, 0.000000)">
+                    <g id="Graph-/-Background">
+                        <path d="M-5.94873933,257.16818 C24.9084678,193.34991 46.7799362,161.440775 59.6656659,161.440775 C78.9942605,161.440775 105.815631,257.16818 127.022609,257.16818 C148.229587,257.16818 179.544217,224.527379 191.552602,224.527379 C203.560988,224.527379 234.088078,257.16818 254.676599,257.16818 C268.40228,257.16818 313.510081,219.126508 390,143.043165 L390,283.480654 L-6,283.480654 L-5.94873933,257.16818 Z" id="Chart-Line"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

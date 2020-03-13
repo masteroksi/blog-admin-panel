@@ -1,0 +1,30 @@
+{
+  "name": "blog-admin-panel",
+  "version": "1.0.0",
+  "description": "blog admin panel for creating posts, comments",
+  "main": "t.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masteroksi/blog-admin-panel.git"
+  },
+  "keywords": [
+    "blog",
+    "admin panel"
+  ],
+  "author": "Oksana Tymchuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masteroksi/blog-admin-panel/issues"
+  },
+  "homepage": "https://github.com/masteroksi/blog-admin-panel#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1"
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>localStorage</title>
+    <style>
+        body {
+            font-family: basefont;
+            color: #3D5170;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .tdApp{
+
+        }
+        .input{
+            margin-top: 60px;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 9px;
+            border: 1px solid #17C671;
+            overflow: hidden;
+            padding: 16px;
+            outline: none;
+
+        }
+
+        .btn {
+            margin-left: 10px;
+        color: #3D5170;
+        outline: none;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        background-color: #fff;
+        border-radius: 4px;
+        border: 1px solid #007BFF;
+        font-size: 12px;
+        max-width: 102px;
+        padding: 6px 17px 8px 17px;
+        }
+        .btn:hover{
+            border-color: #674EEC;
+        }
+        .checked {
+            text-decoration: line-through;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <input  class="input" id="inputId" type="text" placeholder="введите коментари">
+    <button class="btn" type="submit">add</button>
+    <button class="btn" type="reset">remove</button>
+    <ul class="list"></ul>
+</div>
+
+<script src="index.js"></script>
+
+
+</body>
+</html>

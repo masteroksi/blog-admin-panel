@@ -1,0 +1,43 @@
+@import "fonts";
+@import "variables";
+@import "reset";
+@import "template";
+
+
+
+// blocks
+@import "blocks/body-container";
+@import "blocks/header";
+@import "blocks/nav-dashboards";
+@import "blocks/main-content";
+@import "blocks/foot";
+@import "blocks/search";
+@import "blocks/user-details";
+@import "blocks/notification";
+@import "blocks/logo";
+@import "blocks/menu-items";
+@import "blocks/nav-foot";
+@import "blocks/overview";
+@import "blocks/page-title";
+@import "blocks/devise-component";
+@import "blocks/header-page-menu";
+@import "blocks/hamburger-menu";
+@import "blocks/dashboard";
+@import "blocks/dashboard-header";
+@import "blocks/chart-components";
+@import "blocks/new-draft-form";
+@import "blocks/comments-list";
+@import "blocks/source-list";
+@import "blocks/buttons";
+@import "blocks/dashboard-footer";
+@import "blocks/posts-list";
+@import "blocks/post-preview";
+@import "blocks/newpost-content";
+@import "blocks/post-form";
+@import "blocks/aside-navigation";
+
+
+//@import "blocks/chat";
+//@import "blocks/assistant";
+//@import "blocks/button-grey";
+//@import "blocks/massage";

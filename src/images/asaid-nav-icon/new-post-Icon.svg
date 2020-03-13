@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Add New Post Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blog-Overview-Template" transform="translate(-61.000000, -416.000000)">
+            <g id="Sidebar">
+                <g id="Menu-Items" transform="translate(0.000000, 137.000000)">
+                    <g id="Add-New-Post" transform="translate(0.000000, 230.000000)">
+                        <g id="Add-New-Post-Icon" transform="translate(57.000000, 47.000000)">
+                            <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                            <path d="M14,2 L6,2 C4.9,2 4.01,2.9 4.01,4 L4,20 C4,21.1 4.89,22 5.99,22 L18,22 C19.1,22 20,21.1 20,20 L20,8 L14,2 Z M16,16 L13,16 L13,19 L11,19 L11,16 L8,16 L8,14 L11,14 L11,11 L13,11 L13,14 L16,14 L16,16 Z M13,9 L13,3.5 L18.5,9 L13,9 Z" id="Shape" fill="#CACEDB" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
