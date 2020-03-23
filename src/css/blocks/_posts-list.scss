@@ -1,26 +1,51 @@
-.posts-list{
+.posts-list {
   display: flex;
   flex-wrap: wrap;
   margin: -12px;
 
-  &__item{
+  &__item {
     margin: 12px;
     flex-basis: calc(25% - 24px);
 
+    @media screen and (max-width: 1310px) {
+      flex-basis: calc(100% / 3 - 24px);
+    }
 
 
     &:nth-child(5),
     &:nth-child(6) {
       flex-basis: calc(50% - 24px);
       flex-grow: 2;
+
+      @media screen and (max-width: 1310px) {
+        flex-basis: calc(100% / 3 - 24px);
+      }
     }
 
     &:nth-child(7),
     &:nth-child(8),
     &:nth-child(9) {
       flex-basis: calc((100% / 3) - 24px);
+
+      @media screen and (max-width: 1070px) {
+        flex-grow: 2;
+      }
+
+
     }
   }
 
+  @media screen and (max-width: 1070px) {
 
+
+  }
+
+
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1 1 250px;
+
+
+  }
 }

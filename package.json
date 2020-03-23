@@ -20,11 +20,15 @@
     "url": "https://github.com/masteroksi/blog-admin-panel/issues"
   },
   "homepage": "https://github.com/masteroksi/blog-admin-panel#readme",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "gulp-ejs": "^5.0.0"
   }
 }

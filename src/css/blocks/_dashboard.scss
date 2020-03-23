@@ -27,12 +27,13 @@
   display: grid;
   grid-gap: 20px;
   grid-template-rows: auto;
-  //grid-auto-flow: column;
+  grid-auto-flow: column;
   grid-template-columns: repeat(12, 1fr);
 
   &__col {
     //background-color: #ccc;
     //align-items: start;
+    cursor: move;
 
     &:first-child {
       grid-column: 1/9;

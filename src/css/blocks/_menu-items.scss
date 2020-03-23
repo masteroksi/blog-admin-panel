@@ -1,12 +1,12 @@
 .menu-items {
   width: 100%;
   list-style: none;
+  position: relative;
 
   &__item {
     position: relative;
     vertical-align: bottom;
     border-top: 1px solid #E0E2E8;
-    padding: 19px 0 20px 28px;
 
     &:before{
       content: '';
@@ -36,8 +36,7 @@
     width: 100%;
     display: inline-block;
     text-decoration: none;
-
-
+    padding: 19px 0 20px 28px;
 
   }
 
@@ -62,5 +61,10 @@
     padding: 5px 0;
 
   }
+
+
+
+
+
 
 }

@@ -1,5 +1,79 @@
-.nav-dashboards{
+.nav-dashboards {
+  position: relative;
   grid-area: nav-dashboards;
-  box-shadow: 0 2px 0 rgba(151, 151,151, 1);
+  box-shadow: 0 2px 0 rgba(151, 151, 151, 1);
 
+  &__btn {
+    display: none;
+    position: absolute;
+    right: -42px;
+    top: 12px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #007BFF;
+    border-radius: 50px;
+    padding: 8px;
+    //box-shadow: 0 15px 65px #007BFF;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: "San Francisco", Arial, sans-serif;
+    text-align: center;
+    cursor: pointer;
+    line-height: 20px;
+    z-index: 5;
+    background: #fff;
+
+    outline: none;
+    transition: all .2s ease-in-out;
+
+    &:before, &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.15);
+
+    }
+
+    &:before {
+      left: 8px;
+      top: 16px;
+    }
+
+    &:after {
+      left: 8px;
+      top: 22px;
+    }
+
+    &:hover {
+      //transform: skew(25deg);
+      border-radius: 10px;
+      background: #007BFF;
+
+      &:before, &:after {
+        background-color: #fff;
+      }
+    }
+
+    @media screen and (max-width: 1070px) {
+      display: block;
+    }
+
+  }
+
+  @media screen and (max-width: 1070px) {
+    position: fixed;
+    right: 100%;
+    top: 0;
+    width: 320px;
+    background: $white;
+    height: 100%;
+    z-index: 20;
+    transition: transform .3s;
+
+    &_show {
+      transform: translateX(320px);
+    }
+  }
 }

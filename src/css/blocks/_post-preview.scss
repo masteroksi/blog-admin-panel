@@ -4,9 +4,15 @@
   overflow: hidden;
   position: relative;
   background-color: $white;
+  //height: 100%;
 
   &__picture {
     position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width: 1310px) {
+      max-height: 182px;
+    }
   }
 
   &__img {
@@ -44,8 +50,6 @@
       display: none;
 
     }
-
-
   }
 
   &__content {
@@ -55,13 +59,19 @@
   &__title {
     padding: 15px 20px 15px;
 
-  }
+
+
+    }
 
   &__title-link {
     font-size: 20px;
     //color: $darkGray;
     text-decoration: none;
     color: #2B394F;
+
+    @media screen and (max-width: 1310px) {
+      font-size:15px;
+    }
   }
 
   &__text {
@@ -154,21 +164,40 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
 
+    @media screen and (max-width: 1310px) {
+      display: block;
+    }
 
     .post-preview__category {
       top: 15px;
       left: 20px;
       right: auto;
+
+      @media screen and (max-width: 1310px) {
+        right: 15px;
+        top: 15px;
+        left: auto;
+      }
     }
 
     .post-preview__user-pic-wrap {
       top: auto;
       bottom: 24px;
       left: 20px;
+
+      @media screen and (max-width: 1310px) {
+        left: 18px;
+        top: -32px;
+        bottom: auto;
+      }
     }
 
     .post-preview__content {
       position: static;
+
+      @media screen and (max-width: 1310px) {
+        position: relative;
+      }
     }
   }
 

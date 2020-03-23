@@ -1,5 +1,17 @@
-.main-content{
+.main-content {
   grid-area: main-content;
   background: #FBFBFB;
   padding: 27px;
+  @media screen and (max-width: 1070px) {
+
+  }
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1 1 250px;
+
+
+  }
+
+
 }
