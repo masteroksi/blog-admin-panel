@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Blog Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blog-Overview-Template" transform="translate(-57.000000, -185.000000)">
+            <g id="Sidebar">
+                <g id="Menu-Items" transform="translate(0.000000, 137.000000)">
+                    <g id="Blog-Dashboard">
+                        <g id="Blog-Icon" transform="translate(53.000000, 44.000000)">
+                            <path d="M4,21.4173032 L4,26 L8.58269685,26 L22.0985974,12.4840994 L17.5159006,7.90140258 L4,21.4173032 Z M25.6425496,8.9401472 C26.1191501,8.46354673 26.1191501,7.69365366 25.6425496,7.21705319 L22.7829468,4.35745035 C22.3063463,3.88084988 21.5364533,3.88084988 21.0598528,4.35745035 L18.8234967,6.59380642 L23.4061936,11.1765033 L25.6425496,8.9401472 Z" id="Shape" fill="#CACEDB" fill-rule="nonzero"></path>
+                            <polygon id="Shape" points="0 0 29 0 29 29 0 29"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

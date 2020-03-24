@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="17px" viewBox="0 0 25 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Add-New-Post---Template" transform="translate(-2287.000000, -543.000000)" fill="#5A6169" fill-rule="nonzero">
+            <g id="Actions" transform="translate(2255.000000, 339.000000)">
+                <g id="Actions-List" transform="translate(30.000000, 145.000000)">
+                    <g id="Visibility" transform="translate(1.000000, 51.000000)">
+                        <g id="eye" transform="translate(0.000000, 3.000000)">
+                            <path d="M13.5,5 C7.81818182,5 2.96590909,8.52466667 1,13.5 C2.96590909,18.4753333 7.81818182,22 13.5,22 C19.1818182,22 24.0340909,18.4753333 26,13.5 C24.0340909,8.52466667 19.1818182,5 13.5,5 Z M13.5,19.1666667 C10.3636364,19.1666667 7.81818182,16.628 7.81818182,13.5 C7.81818182,10.372 10.3636364,7.83333333 13.5,7.83333333 C16.6363636,7.83333333 19.1818182,10.372 19.1818182,13.5 C19.1818182,16.628 16.6363636,19.1666667 13.5,19.1666667 Z M13.5,10.1 C11.6136364,10.1 10.0909091,11.6186667 10.0909091,13.5 C10.0909091,15.3813333 11.6136364,16.9 13.5,16.9 C15.3863636,16.9 16.9090909,15.3813333 16.9090909,13.5 C16.9090909,11.6186667 15.3863636,10.1 13.5,10.1 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

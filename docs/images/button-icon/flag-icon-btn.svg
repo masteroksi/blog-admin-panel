@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blog-Posts-Template" transform="translate(-1091.000000, -1941.000000)" fill="#3D5170" fill-rule="nonzero">
+            <g id="Blog-Overview---Component(s)" transform="translate(625.000000, 334.000000)">
+                <g id="Blog-Posts---Simple-(No-Featured-Image)" transform="translate(0.000000, 1244.000000)">
+                    <g id="Blog-Post">
+                        <g id="Card-Footer" transform="translate(0.000000, 302.000000)">
+                            <g id="Traffic" transform="translate(444.000000, 40.000000)">
+                                <g id="Bookmark-Button" transform="translate(17.000000, 18.000000)">
+                                    <path d="M17,3 L7,3 C5.9,3 5.01,3.9 5.01,5 L5,21 L12,18 L19,21 L19,5 C19,3.9 18.1,3 17,3 Z M17,18 L12,15.82 L7,18 L7,5 L17,5 L17,18 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
