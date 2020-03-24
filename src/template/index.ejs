@@ -60,8 +60,8 @@
         </ul>
 
         <div class="dashboard">
-            <div class="dashboard__col  draggable='true'">
-                <section class="dashboard-header js-dashboard-col draggable='true">
+            <div class="dashboard__col js-dashboard-header">
+                <section class="dashboard-header">
                     <header class="dashboard-header__top ">
                         <h3 class="dashboard-header__title">Users</h3>
                         <div class="dashboard-header__drag-drop-icon">
@@ -90,7 +90,7 @@
                     </div>
                 </section>
             </div>
-            <div class="dashboard__col">
+            <div class="dashboard__col js-dashboard-header">
                 <section class="dashboard-header">
                     <header class="dashboard-header__top">
                         <h3 class="dashboard-header__title">Users by device</h3>
@@ -116,7 +116,7 @@
                     </div>
                 </section>
             </div>
-            <div class="dashboard__col">
+            <div class="dashboard__col js-dashboard-header">
                 <section class="dashboard-header">
                     <header class="dashboard-header__top">
                         <h3 class="dashboard-header__title">New Draft</h3>
@@ -136,7 +136,7 @@
             </div>
 
 
-            <div class="dashboard__col">
+            <div class="dashboard__col js-dashboard-header">
                 <section class="dashboard-header">
                     <header class="dashboard-header__top">
                         <h3 class="dashboard-header__title">Discussions</h3>
@@ -208,7 +208,7 @@
                 </section>
 
             </div>
-            <div class="dashboard__col">
+            <div class="dashboard__col js-dashboard-header">
                 <section class="dashboard-header">
                     <header class="dashboard-header__top">
                         <h3 class="dashboard-header__title">Top Referrals</h3>
@@ -309,6 +309,7 @@
     <%- include('blocks/foot'); %>
 
 </div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
 <%- include('blocks/script'); %>
 </body>
 </html>

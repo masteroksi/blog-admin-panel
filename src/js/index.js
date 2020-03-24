@@ -32,35 +32,47 @@ document.body.addEventListener('click', function () {
 });
 
 
+// ==== drag and drop ====
 
-
-const dashboard = document.querySelector('.js-dashboard-col');
-
-// const  content = document.querySelector('.js-main-content');
-
-if (dashboard) {
-    let startCursorX;
-    let startCursorY;
-    let startX;
-    let startY;
-
-    dashboard.addEventListener('dragstart',function () {
-        startCursorX = event.pageX;
-        startCursorY = event.pageY;
-        startX = dashboard.style.marginLeft.replace('px','')*1;
-        startY = dashboard.style.marginTop.replace('px','')*1;
-    });
-    dashboard.addEventListener('dragover',function() {
-        event.preventDefault();
-    });
-
-    dashboard.addEventListener('dragend',function() {
-        dashboard.style.position = 'absolute';
-        dashboard.style.marginLeft = startX + event.pageX - startCursorX; //позиция элемента + позиция курсора - позиция курсоа в начале перетаскивания
-        dashboard.style.marginTop = startY + event.pageY - startCursorY; // Так же как и в предыдущем случае, только по другой оси
-
+if (dragula) {
+    dragula([...document.querySelectorAll('.js-dashboard-header')], {
+        moves: function (el, container, handle) {
+            return handle.classList.contains('dashboard-header__top')
+                || handle.classList.contains('dashboard-header__title');
+        },
+        mirrorContainer: document.body,
     });
 }
+
+// ==== drag and drop end ====
+
+// const dashboard = document.querySelector('.js-dashboard-col');
+//
+// // const  content = document.querySelector('.js-main-content');
+//
+// if (dashboard) {
+//     let startCursorX;
+//     let startCursorY;
+//     let startX;
+//     let startY;
+//
+//     dashboard.addEventListener('dragstart',function () {
+//         startCursorX = event.pageX;
+//         startCursorY = event.pageY;
+//         startX = dashboard.style.marginLeft.replace('px','')*1;
+//         startY = dashboard.style.marginTop.replace('px','')*1;
+//     });
+//     dashboard.addEventListener('dragover',function() {
+//         event.preventDefault();
+//     });
+//
+//     dashboard.addEventListener('dragend',function() {
+//         dashboard.style.position = 'absolute';
+//         dashboard.style.marginLeft = startX + event.pageX - startCursorX; //позиция элемента + позиция курсора - позиция курсоа в начале перетаскивания
+//         dashboard.style.marginTop = startY + event.pageY - startCursorY; // Так же как и в предыдущем случае, только по другой оси
+//
+//     });
+// }
 
 
 
