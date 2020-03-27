@@ -2,7 +2,10 @@
   grid-area: main-content;
   background: #FBFBFB;
   padding: 27px;
-  @media screen and (max-width: 1070px) {
+  @media screen and (max-width: 1070px), (pointer:coarse) {
+    display: grid;
+
+    grid-auto-flow: row;
 
   }
   @media screen and (max-width: 600px) {

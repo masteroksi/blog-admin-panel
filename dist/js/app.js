@@ -34,8 +34,8 @@ document.body.addEventListener('click', function () {
 
 // ==== drag and drop ====
 
-if (dragula) {
-    dragula([...document.querySelectorAll('.js-dashboard-header')], {
+if (window.dragula) {
+    window.dragula([...document.querySelectorAll('.js-dashboard-header')], {
         moves: function (el, container, handle) {
             return handle.classList.contains('dashboard-header__top')
                 || handle.classList.contains('dashboard-header__title');
@@ -73,6 +73,37 @@ if (dragula) {
 //
 //     });
 // }
+const blogPost = {
+    title: "post title",
+    name: ["James Khan","Chris Jones","Mark Jameson", "Alene Trenton"],
+    userpic: "",
+    date:"",
+    category: ["Business","travel","technology"],
+
+
+
+};
+
+
+
+const formNewArticle = document.querySelector('.js-form-submit-new-article');
+if (formNewArticle) {
+    formNewArticle.addEventListener('submit', evt => {
+        evt.preventDefault();
+        const data = new FormData(evt.target);
+        const dataObj = Object.fromEntries(data.entries());
+        dataObj.newMessage = window.quill.getText();
+
+        const articles = localStorage.getItem("articles");
+        if (articles) {
+            const parsedArticles = JSON.parse(articles);
+            parsedArticles.push(dataObj);
+            localStorage.setItem("articles", JSON.stringify(parsedArticles));
+        } else {
+            localStorage.setItem("articles", JSON.stringify([dataObj]));
+        }
+    });
+}
 
 
 

@@ -4,7 +4,8 @@
     <title>blog admin panel</title>
     <%- include('blocks/common-files-dependency'); %>
     <!-- Quill -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css"
+          rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
     <link href="https://cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
@@ -21,18 +22,42 @@
         </div>
 
         <div class="newpost-content">
-            <form class="post-form" action="#" method="post">
-                <!--<fieldset>-->
+            <form class="post-form js-form-submit-new-article">
                 <input class="post-form__input-post-title" type="text"
                        placeholder="Your Post Title"
-                       aria-label="post title"
-                       name="">
-                <!--</fieldset>-->
-                <fieldset class="post-form__wrap">
+                       name="title">
+                <div class="post-form__col">
+                    <input class="post-form__input-post-name" type="text"
+                           placeholder="Your Name"
+                           name="username">
+                    <select name="userpic" class="post-form__chosen">
+                        <option value="">Your Name</option>
+                        <option value="/images/avatar-img/1-avatar.png">James Khan</option>
+                        <option value="/images/avatar-img/2-avatar.png">Chris Jones</option>
+                        <option value="/images/avatar-img/3-avatar.png">Mark Jameson</option>
+                        <option value="/images/header-icons/user-avatar@2x.png">Alene Trenton</option>
+                        <option value="/images/header-icons/user-avatar@2x.png">Monica Jordan</option>
+                        <option value="/images/avatar-img/2-avatar.png">Chris Jamie</option>
+                    </select>
+
+                </div>
+
+                <div class="post-form__col">
+                    <select name="category" class="post-form__chosen">
+                        <option value="">Your category</option>
+                        <option value="Business">Business</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </div>
+                <div class="post-form__wrap">
                     <!-- ===========quill js============ -->
                     <div id="editor-container"></div>
                     <!-- ===========quill js============ -->
-                </fieldset>
+                </div>
+
+                <button>submit</button>
             </form>
             <div class="aside-navigation">
                 <div class="aside-navigation__actions">
@@ -53,7 +78,7 @@
                             <div class="aside-navigation__status">
                                 <img class="aside-navigation__img" src="images/asaid-nav-icon/eye.svg" alt="">
                                 <span class="aside-navigation__text">Visibility:  <b
-                                        class="aside-navigation__color aside-navigation__color_green">Public</b>
+                                            class="aside-navigation__color aside-navigation__color_green">Public</b>
                                 </span>
                             </div>
                             <span class="aside-navigation__edit-text">Edit</span>
@@ -62,7 +87,7 @@
                             <div class="aside-navigation__status">
                                 <img class="aside-navigation__img" src="images/asaid-nav-icon/calendar.svg" alt="">
                                 <span class="aside-navigation__text">Schedule:  <b
-                                        class="aside-navigation__color">Now</b>
+                                            class="aside-navigation__color">Now</b>
                                 </span>
                             </div>
                             <span class="aside-navigation__edit-text">Edit</span>
@@ -71,7 +96,7 @@
                             <div class="aside-navigation__status">
                                 <img class="aside-navigation__img" src="images/asaid-nav-icon/score.svg" alt="">
                                 <span class="aside-navigation__text">Readability:  <b
-                                        class="aside-navigation__color aside-navigation__color_yellow">Ok</b>
+                                            class="aside-navigation__color aside-navigation__color_yellow">Ok</b>
                                 </span>
                             </div>
                             <!--<span class="aside-navigation__edit-text">Edit</span>-->
@@ -79,7 +104,7 @@
                     </ul>
                     <div class="aside-navigation__footer">
                         <button class="aside-navigation__btn aside-navigation__btn_draft" type="button">
-                            <img class="aside-navigation__img-flach-card" src="images/button-icon/flash-card.svg/"
+                            <img class="aside-navigation__img-flach-card" src="images/button-icon/flash-card.svg"
                                  alt="">
                             Save Draft
                         </button>
@@ -159,10 +184,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
 <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 <script>
-    var quill = new Quill('#editor-container', {
+    window.quill = new Quill('#editor-container', {
         modules: {
             toolbar: [
-                [{ header: [1, 2, false] }],
+                [{header: [1, 2, false]}],
                 ['bold', 'italic', 'underline'],
                 ['image', 'code-block']
             ]

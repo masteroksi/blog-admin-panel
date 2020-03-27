@@ -16,6 +16,58 @@
     padding: 13px;
     border: 1px solid #E0E2E8;
   }
+  &__col{
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  &__input-post-name{
+    padding: 13px;
+    display: inline-block;
+
+
+  }
+  &__chosen{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    padding: 13px;
+    border: 1px solid #BECAD6;
+    outline: 0;
+    color: #7b7b7b;
+    -webkit-appearance: none; /*убираем галочку в webkit-браузерах*/
+    -moz-appearance: none; /*убираем галочку в Mozilla Firefox*/
+
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 38px;
+      right: 15px;
+      width: 0;
+      height: 0;
+      pointer-events: none; /*активизируем показ списка при нажатии на стрелку*/
+      border-style: solid;
+      border-width: 8px 5px 0 5px;
+      border-color: #7b7b7b transparent transparent transparent;
+
+    }
+  }
+
+  &__select-arrow {
+    display: block;
+    position: absolute;
+    top: 38px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none; /*активизируем показ списка при нажатии на стрелку*/
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+  }
   &__symbol{}
   &__comment{
     box-sizing: border-box;
