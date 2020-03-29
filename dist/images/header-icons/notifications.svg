@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="34px" height="42px" viewBox="0 0 34 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
-    <title>Notifications</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Blog-Overview-Template" transform="translate(-2279.000000, -46.000000)" fill="#818EA3" fill-rule="nonzero">
-            <g id="Main-Header-" transform="translate(569.000000, -1.000000)">
-                <g id="Notifications" transform="translate(1657.000000, 0.000000)">
-                    <path d="M70,88.9333333 C72.4933333,88.9333333 74.5333333,86.8933333 74.5333333,84.4 L65.4666667,84.4 C65.4666667,86.8933333 67.484,88.9333333 70,88.9333333 Z M82.75,75.7454545 L82.75,65.0989899 C82.75,58.5620606 79.265,53.0897778 73.1875,51.6418586 L73.1875,50.1939394 C73.1875,48.4266263 71.76375,47 70,47 C68.23625,47 66.8125,48.4266263 66.8125,50.1939394 L66.8125,51.6418586 C60.71375,53.0897778 57.25,58.5407677 57.25,65.0989899 L57.25,75.7454545 L53,80.0040404 L53,82.1333333 L87,82.1333333 L87,80.0040404 L82.75,75.7454545 Z"></path>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="34" height="42" xmlns="http://www.w3.org/2000/svg"><path d="M17 41.933a4.547 4.547 0 004.533-4.533h-9.066A4.532 4.532 0 0017 41.933zm12.75-13.188V18.1c0-6.537-3.485-12.01-9.563-13.457V3.194a3.186 3.186 0 10-6.375 0v1.448C7.715 6.09 4.25 11.54 4.25 18.099v10.646L0 33.004v2.13h34v-2.13l-4.25-4.259z" fill="#818EA3"/></svg>

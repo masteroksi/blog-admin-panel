@@ -1,20 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="25px" height="20px" viewBox="0 0 25 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
-    <title>Overview (Components) Icon</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Blog-Overview-Template" transform="translate(-57.000000, -531.000000)">
-            <g id="Sidebar">
-                <g id="Menu-Items" transform="translate(0.000000, 137.000000)">
-                    <g id="Forms-&amp;-Components" transform="translate(0.000000, 345.000000)">
-                        <g id="Overview-(Components)-Icon" transform="translate(52.000000, 42.000000)">
-                            <path d="M5,16.2307692 L12.3529412,16.2307692 L12.3529412,7 L5,7 L5,16.2307692 Z M5,27 L12.3529412,27 L12.3529412,17.7692308 L5,17.7692308 L5,27 Z M13.8235294,27 L21.1764706,27 L21.1764706,17.7692308 L13.8235294,17.7692308 L13.8235294,27 Z M22.6470588,27 L30,27 L30,17.7692308 L22.6470588,17.7692308 L22.6470588,27 Z M13.8235294,16.2307692 L21.1764706,16.2307692 L21.1764706,7 L13.8235294,7 L13.8235294,16.2307692 Z M22.6470588,7 L22.6470588,16.2307692 L30,16.2307692 L30,7 L22.6470588,7 Z" id="Shape" fill="#CACEDB" fill-rule="nonzero"></path>
-                            <polygon id="Shape" points="0 0 36 0 36 36 0 36"></polygon>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
+<svg width="25" height="20" viewBox="0 0 25 20" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 9.23h7.353V0H0v9.23zM0 20h7.353v-9.23H0V20zm8.824 0h7.352v-9.23H8.824V20zm8.823 0H25v-9.23h-7.353V20zM8.824 9.23h7.352V0H8.824v9.23zM17.647 0v9.23H25V0h-7.353z"
+              fill="#CACEDB" fill-rule="nonzero"/>
     </g>
 </svg>
