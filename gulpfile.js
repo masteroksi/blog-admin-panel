@@ -17,6 +17,7 @@ function template() {
         .pipe(ejs())
         .pipe(rename({extname: '.html'}))
         .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./docs'))
         .pipe(connect.reload());
 }
 
@@ -24,6 +25,7 @@ function js() {
     return gulp.src('./src/js/**/*.js')
         .pipe(concat('app.js'))
         .pipe(gulp.dest('./dist/js'))
+        .pipe(gulp.dest('./docs/js'))
         .pipe(connect.reload());
 
 }
@@ -32,18 +34,21 @@ function scss() {
     return gulp.src('./src/css/**/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('./dist/css'))
+        .pipe(gulp.dest('./docs/css'))
         .pipe(connect.reload());
 
 }
 
 function copyImages() {
     return gulp.src('./src/images/**')
-        .pipe(gulp.dest('./dist/images'));
+        .pipe(gulp.dest('./dist/images'))
+        .pipe(gulp.dest('./docs/images'));
 }
 
 function copyFonts() {
     return gulp.src('./src/fonts/**')
-        .pipe(gulp.dest('./dist/fonts'));
+        .pipe(gulp.dest('./dist/fonts'))
+        .pipe(gulp.dest('./docs/fonts'));
 }
 
 function watch() {

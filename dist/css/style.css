@@ -933,7 +933,9 @@ b {
     grid-template-columns: 1fr 2fr; }
     @media screen and (max-width: 1310px) {
       .post-preview_vertical {
-        display: block; } }
+        display: block;
+        max-height: 182px;
+        width: 100%; } }
     .post-preview_vertical .post-preview__category {
       top: 15px;
       left: 20px;
