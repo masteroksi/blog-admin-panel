@@ -7,7 +7,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  //justify-content: space-between;
   transition: opacity 0.4s ease-in-out;
 
 
@@ -65,12 +65,17 @@
   }
 
   &__content { // в __content 2 елемента
-    align-content: end;
+    //align-content: end;
     flex-grow: 2;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+  }
+  @media screen  and (max-width: 640px){
+
+
 
   }
 }

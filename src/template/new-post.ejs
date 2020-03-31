@@ -21,44 +21,18 @@
             <h2 class="page-title__title">Add New Post</h2>
         </div>
 
-        <div class="newpost-content">
-            <form class="post-form js-form-submit-new-article">
+        <form class="newpost-content js-form-submit-new-article">
+            <div class="post-form">
                 <input class="post-form__input-post-title" type="text"
                        placeholder="Your Post Title"
                        name="title">
-                <div class="post-form__col">
-                    <input class="post-form__input-post-name" type="text"
-                           placeholder="Your Name"
-                           name="username">
-                    <select name="userpic" class="post-form__chosen">
-                        <option value="">Your Name</option>
-                        <option value="images/avatar-img/1-avatar.png">James Khan</option>
-                        <option value="images/avatar-img/2-avatar.png">Chris Jones</option>
-                        <option value="images/avatar-img/3-avatar.png">Mark Jameson</option>
-                        <option value="images/header-icons/user-avatar@2x.png">Alene Trenton</option>
-                        <option value="images/header-icons/user-avatar@2x.png">Monica Jordan</option>
-                        <option value="images/avatar-img/2-avatar.png">Chris Jamie</option>
-                    </select>
 
-                </div>
-
-                <div class="post-form__col">
-                    <select name="category" class="post-form__chosen">
-                        <option value="">Your category</option>
-                        <option value="Business">Business</option>
-                        <option value="Travel">Travel</option>
-                        <option value="Technology">Technology</option>
-                        <option value="Business">Business</option>
-                    </select>
-                </div>
                 <div class="post-form__wrap">
                     <!-- ===========quill js============ -->
                     <div id="editor-container"></div>
                     <!-- ===========quill js============ -->
                 </div>
-
-                <button>submit</button>
-            </form>
+            </div>
             <div class="aside-navigation">
                 <div class="aside-navigation__actions">
                     <header class="aside-navigation__header">
@@ -95,7 +69,7 @@
                         <li class="aside-navigation__item">
                             <div class="aside-navigation__status">
                                 <img class="aside-navigation__img" src="images/asaid-nav-icon/score.svg" alt="">
-                                <span class="aside-navigation__text">Readability:  <b
+                                <span class="aside-navigation__text">Readability: <b
                                             class="aside-navigation__color aside-navigation__color_yellow">Ok</b>
                                 </span>
                             </div>
@@ -110,65 +84,117 @@
                         </button>
                         <button class="aside-navigation__btn aside-navigation__btn_publish" type="submit">
                             <img class="aside-navigation__img-file-card" src="images/button-icon/file-copy.svg" alt="">
-
                             Publish
                         </button>
 
                     </div>
                 </div>
 
+                <section class="aside-navigation__categories">
+                    <header class="aside-navigation__header">
+                        <h3 class="aside-navigation__title">Author photo</h3>
+                        <div class="aside-navigation__drag-drop-icon"></div>
+                    </header>
+                    <div class="aside-navigation__authors-photos">
+                        <label class="aside-navigation__author-photo" title="James Khan">
+                            <input name="userpic" value="images/avatar-img/1-avatar.png" class="aside-navigation__author-photo-radio" type="radio" checked>
+                            <img src="images/avatar-img/1-avatar.png" width="35" height="35" alt="James Khan" class="aside-navigation__author-photo-img">
+                        </label>
+                        <label class="aside-navigation__author-photo" title="Chris Jones">
+                            <input name="userpic" value="images/avatar-img/2-avatar.png" class="aside-navigation__author-photo-radio" type="radio">
+                            <img src="images/avatar-img/2-avatar.png" width="35" height="35" alt="Chris Jones" class="aside-navigation__author-photo-img">
+                        </label>
+                        <label class="aside-navigation__author-photo" title="Mark Jameson">
+                            <input name="userpic" value="images/avatar-img/3-avatar.png" class="aside-navigation__author-photo-radio" type="radio">
+                            <img src="images/avatar-img/3-avatar.png" width="35" height="35" alt="Mark Jameson" class="aside-navigation__author-photo-img">
+                        </label>
+                        <label class="aside-navigation__author-photo" title="Alene Trenton">
+                            <input name="userpic" value="images/header-icons/user-avatar@2x.png" class="aside-navigation__author-photo-radio" type="radio">
+                            <img src="images/header-icons/user-avatar@2x.png" width="35" height="35" alt="Alene Trenton" class="aside-navigation__author-photo-img">
+                        </label>
+                    </div>
+                    <div class="aside-navigation__author-name-field-wrap">
+                        <input class="post-form__input-post-name" type="text"
+                               placeholder="Author Name"
+                               name="username">
+                    </div>
+                </section>
 
-                <div class="aside-navigation__categories">
+                <section class="aside-navigation__categories">
                     <header class="aside-navigation__header">
                         <h3 class="aside-navigation__title">Categories</h3>
                         <div class="aside-navigation__drag-drop-icon"></div>
                     </header>
+
                     <ul class="aside-navigation__list">
                         <li class="aside-navigation__item">
                             <label class="aside-navigation__label">
-                                <input class="aside-navigation__checkbox-input" type="checkbox">
+                                <input name="category" value="business" class="aside-navigation__checkbox-input" checked
+                                       type="radio">
+                                <span class="aside-navigation__checkbox"></span>
+                                Business
+                            </label>
+                        </li>
+                        <li class="aside-navigation__item">
+                            <label class="aside-navigation__label">
+                                <input name="category" value="Technology" class="aside-navigation__checkbox-input"
+                                       type="radio">
+                                <span class="aside-navigation__checkbox"></span>
+                                Technology
+                            </label>
+                        </li>
+                        <li class="aside-navigation__item">
+                            <label class="aside-navigation__label">
+                                <input name="category" value="Travel" class="aside-navigation__checkbox-input"
+                                       type="radio">
+                                <span class="aside-navigation__checkbox"></span>
+                                Travel
+                            </label>
+                        </li>
+                        <li class="aside-navigation__item">
+                            <label class="aside-navigation__label">
+                                <input name="category" value="Uncategorized" class="aside-navigation__checkbox-input"
+                                       type="radio">
                                 <span class="aside-navigation__checkbox"></span>
                                 Uncategorized
                             </label>
-
                         </li>
                         <li class="aside-navigation__item">
                             <label class="aside-navigation__label">
-                                <input class="aside-navigation__checkbox-input" type="checkbox" checked>
+                                <input name="category" value="Design" class="aside-navigation__checkbox-input"
+                                       type="radio">
                                 <span class="aside-navigation__checkbox"></span>
                                 Design
                             </label>
-
                         </li>
                         <li class="aside-navigation__item">
                             <label class="aside-navigation__label">
-                                <input class="aside-navigation__checkbox-input" type="checkbox">
+                                <input name="category" value="Development" class="aside-navigation__checkbox-input"
+                                       type="radio">
                                 <span class="aside-navigation__checkbox"></span>
                                 Development
                             </label>
                         </li>
                         <li class="aside-navigation__item">
                             <label class="aside-navigation__label">
-                                <input class="aside-navigation__checkbox-input" type="checkbox">
+                                <input name="category" value="Writing" class="aside-navigation__checkbox-input"
+                                       type="radio">
                                 <span class="aside-navigation__checkbox"></span>
                                 Writing
                             </label>
                         </li>
                         <li class="aside-navigation__item">
                             <label class="aside-navigation__label">
-                                <input class="aside-navigation__checkbox-input" type="checkbox">
+                                <input name="category" value="Books" class="aside-navigation__checkbox-input"
+                                       type="radio">
                                 <span class="aside-navigation__checkbox"></span>
                                 Books
                             </label>
                         </li>
                     </ul>
-
-                </div>
-
-
+                </section>
             </div>
-
-        </div>
+        </form>
 
 
         <!---============-->

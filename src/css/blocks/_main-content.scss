@@ -2,15 +2,16 @@
   grid-area: main-content;
   background: #FBFBFB;
   padding: 27px;
+  display: grid;
+  //grid-template-columns: repeat(auto-fill, 200px );
   @media screen and (max-width: 1070px), (pointer:coarse) {
     display: grid;
-
-    grid-auto-flow: row;
+    //grid-auto-flow: row;
 
   }
-  @media screen and (max-width: 600px) {
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex: 1 1 250px;
+  @media screen and (max-width: 640px) {
+    //grid-template-rows: ;
+    grid-auto-flow: row;
+    //grid-column: 1/3;
   }
 }

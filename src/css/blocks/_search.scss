@@ -15,6 +15,16 @@
     background: url("../images/header-icons/search-icon.svg") left center no-repeat;
     background-size: 14px 14px;
   }
+  @media screen and (max-width: 640px){
+    padding: 0;
+    //width: 100%;
+    text-align: center;
+    &__input{
+      text-align: center;
+    }
+
+
+  }
 
 
 }

@@ -32,11 +32,7 @@
 
 
   &__col{
-    @media screen and (max-width: 1070px){
-
-
-
-    }
+    @media screen and (max-width: 1070px){}
 
 
     &:first-child {
@@ -83,5 +79,30 @@
 
       }
     }
+
+    @media screen and (max-width: 640px){
+      &:first-child{
+        grid-column: 1/13;
+      }
+      &:nth-child(2){
+        grid-column: 1/13;
+      }
+      &:nth-child(3){
+        grid-column: 1/13;
+      }
+      &:nth-child(4){
+        grid-column: 1/13;
+      }
+      &:nth-child(5){
+        grid-column: 1/13;
+      }
+
+    }
+
+
+
+
   }
-}
+
+
+  }

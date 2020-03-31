@@ -113,7 +113,7 @@
 
   &__footer {
     //border-top: 1px solid #E0E2E8;
-    background-color:  rgba( 151, 151, 151, .1);
+    background-color: rgba(151, 151, 151, .1);
 
     display: flex;
     justify-content: space-between;
@@ -124,6 +124,7 @@
   &__btn {
     @extend %button-default;
     @extend %button-default_blue;
+
     &_draft {
       background-color: #fff;
       border: 1px solid #007BFF;
@@ -131,14 +132,8 @@
       padding: 9px 10px 9px 11px;
       transition: .5s;
 
-      &:hover{
+      &:hover {
         transition: .5s;
-
-
-
-
-
-
       }
 
     }
@@ -203,18 +198,53 @@
       background-size: contain;
     }
   }
-  &__img-flach-card{
+
+  &__img-flach-card {
     display: inline-block;
     width: 9px;
     height: 9px;
     margin-right: 3px;
   }
-  &__img-file-card{
+
+  &__img-file-card {
     display: inline-block;
     width: 9px;
     height: 9px;
     margin-right: 3px;
+  }
 
+  &__authors-photos {
+    padding: 10px 15px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+  }
+
+  &__author-photo {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__author-photo-radio {
+    right: 100%;
+    bottom: 100%;
+    position: absolute;
+
+    &:checked + .aside-navigation__author-photo-img {
+      border-color: #007BFF;
+    }
+  }
+
+  &__author-photo-img {
+    transition: border-color .3s;
+    border: 2px solid $white;
+    border-radius: 50%;
+  }
+  &__author-name-field-wrap {
+    padding: 10px 15px 20px;
   }
 }
 
