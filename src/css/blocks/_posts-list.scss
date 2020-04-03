@@ -15,7 +15,7 @@
     &:nth-child(5),
     &:nth-child(6) {
       flex-basis: calc(50% - 24px);
-      flex-grow: 2;
+      //flex-grow: 2;
 
       @media screen and (max-width: 1310px) {
         flex-basis: calc(100% / 3 - 24px);
@@ -27,7 +27,7 @@
     &:nth-child(9) {
       flex-basis: calc((100% / 3) - 24px);
 
-      @media screen and (max-width: 1070px) {
+      @media screen and (max-width: 640px) {
         flex-grow: 2;
       }
 
@@ -35,10 +35,7 @@
     }
   }
 
-  @media screen and (max-width: 1070px) {
 
-
-  }
 
 
   @media screen and (max-width: 600px) {

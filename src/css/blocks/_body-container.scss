@@ -5,7 +5,7 @@
   //grid-template-rows: $headerHeight 1fr 69px;
   //grid-auto-rows: minmax($headerHeight, auto);
   //grid-auto-rows: minmax(100px, auto);
-  min-height: 100vh;
+  //min-height: 100vh;
 
 
   @media screen and (max-width: 1070px) {
@@ -24,9 +24,7 @@
       justify-content: center;
 
     }
-    .main-content {
-
-    }
+    //.main-content {}
 
   }
   @media screen and (max-width: 640px) {
@@ -41,7 +39,7 @@
     }
     .header {
       display: flex;
-      justify-content: start;
+      //justify-content: start;
 
     }
   }

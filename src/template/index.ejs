@@ -68,7 +68,9 @@
                         </div>
                     </header>
                     <div class="dashboard-header__content">
-                        <div class="chart-components">
+
+                        <div class="chart-components js-chart">
+
                             <div class="chart-components__block-controls">
                                 <div class="chart-components__input-group">
                                     <input class="chart-components__date chart-components__date_start" type="date"
@@ -85,8 +87,8 @@
                                 <img class="chart-components__img-diagram" src="images/img-diagram/Chart.png"
                                      srcset="images/img-diagram/Chart@2x.png 2x" alt="">
                             </div>
-
                         </div>
+
                     </div>
                 </section>
             </div>
@@ -100,8 +102,10 @@
                     <div class="dashboard-header__content">
                         <div class="chart-components">
                             <div class="chart-components__background-diagram chart-components__background-diagram_bottom">
-                                <img src="images/img-diagram/round-diagram.png" width="229"
-                                     srcset="images/img-diagram/round-diagram@2x.png 2x" alt="round diagram">
+                                <canvas id="jsChart" width="229" height="229"></canvas>
+
+                                <!--<img src="images/img-diagram/round-diagram.png" width="229"-->
+                                     <!--srcset="images/img-diagram/round-diagram@2x.png 2x" alt="round diagram">-->
                             </div>
                         </div>
                         <!-- control -->
@@ -110,7 +114,8 @@
                                 <option value="last_week">Last week</option>
                             </select>
                             <div class="chart-components__buttons">
-                                <button class="buttons__btn-report  buttons__btn-report_bold">View Full Report →</button>
+                                <button class="buttons__btn-report  buttons__btn-report_bold">View Full Report →
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -126,7 +131,9 @@
                     <div class="dashboard-header__content">
                         <form class="new-draft-form" action="">
                             <input class="new-draft-form__input" placeholder="Brave New World" type="text">
-                            <textarea class="new-draft-form__field-comments" placeholder="Words can be like X-rays if you use them properly..." name=""></textarea>
+                            <textarea class="new-draft-form__field-comments"
+                                      placeholder="Words can be like X-rays if you use them properly..."
+                                      name=""></textarea>
                             <div class="new-draft-form__buttons">
                                 <button class="new-draft-form__submit-btn" type="submit">Create Draft</button>
                             </div>
@@ -148,12 +155,14 @@
                             <li class="comments-list__item">
                                 <article class="comments-list__comment-article">
                                     <div class="comments-list__head">
-                                        <img class="comments-list__img" src="images/avatar-img/1-avatar.png"  width="52px" srcset="images/avatar-img/1-avatar-2x.png 2x" alt="">
+                                        <img class="comments-list__img" src="images/avatar-img/1-avatar.png"
+                                             width="52px" srcset="images/avatar-img/1-avatar-2x.png 2x" alt="">
                                     </div>
                                     <div class="comments-list__comment-content">
                                         <a class="comments-list__avatar-link" href="#">James Johnson</a>
                                         <span class="comments-list__comment-text">on <b>Hello World!</b> – <time>3 days ago</time></span>
-                                        <p class="comments-list__comment-text">Well, the way they make shows is, they make one...</p>
+                                        <p class="comments-list__comment-text">Well, the way they make shows is, they
+                                            make one...</p>
                                         <div class="comments-list__btn-group">
                                             <button class="comments-list__btn-approve">Approve</button>
                                             <button class="comments-list__reject-btn">Reject</button>
@@ -165,12 +174,14 @@
                             <li class="comments-list__item">
                                 <article class="comments-list__comment-article">
                                     <div class="comments-list__head">
-                                        <img class="comments-list__img" src="images/avatar-img/2-avatar.png"  width="52px"srcset="images/avatar-img/2-avatar@2x.png 2x" alt="">
+                                        <img class="comments-list__img" src="images/avatar-img/2-avatar.png"
+                                             width="52px" srcset="images/avatar-img/2-avatar@2x.png 2x" alt="">
                                     </div>
                                     <div class="comments-list__comment-content">
                                         <a class="comments-list__avatar-link" href="#">James Johnson</a>
                                         <span class="comments-list__comment-text">on <b>Hello World!</b> – <time>3 days ago</time></span>
-                                        <p class="comments-list__comment-text">After the avalanche, it took us a week to climb. Now...</p>
+                                        <p class="comments-list__comment-text">After the avalanche, it took us a week to
+                                            climb. Now...</p>
                                         <div class="comments-list__btn-group">
                                             <button class="comments-list__btn-approve">Approve</button>
                                             <button class="comments-list__reject-btn">Reject</button>
@@ -182,12 +193,14 @@
                             <li class="comments-list__item">
                                 <article class="comments-list__comment-article">
                                     <div class="comments-list__head">
-                                        <img class="comments-list__img" src="images/avatar-img/3-avatar.png "width="52px" srcset="images/avatar-img/3-avatar@2x.png 2x" alt="">
+                                        <img class="comments-list__img" src="images/avatar-img/3-avatar.png "
+                                             width="52px" srcset="images/avatar-img/3-avatar@2x.png 2x" alt="">
                                     </div>
                                     <div class="comments-list__comment-content">
                                         <a class="comments-list__avatar-link" href="#">James Johnson</a>
                                         <span class="comments-list__comment-text">on <b>Hello World!</b> – <time>3 days ago</time></span>
-                                        <p class="comments-list__comment-text">My money's in that office, right? If she start giving...</p>
+                                        <p class="comments-list__comment-text">My money's in that office, right? If she
+                                            start giving...</p>
                                         <div class="comments-list__btn-group">
                                             <button class="comments-list__btn-approve">Approve</button>
                                             <button class="comments-list__reject-btn">Reject</button>
@@ -310,6 +323,7 @@
 
 </div>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js'></script>
 <%- include('blocks/script'); %>
 </body>
 </html>

@@ -3,7 +3,6 @@
   overflow: hidden;
   position: relative;
   background-color: $white;
-  //width: 100%;
   padding: 16px;
 
   &__wrap{
@@ -81,8 +80,19 @@
     padding: 9px 13px;
     resize: none;
   }
+  @media screen and (max-width: 1070px) {
+
+  }
+
+    @media screen and (max-width: 640px) {
+    //height: auto;
+
+  }
 }
 
 #editor-container {
   height: 475px;
+
+
+
 }

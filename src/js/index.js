@@ -73,20 +73,12 @@ if (window.dragula) {
 //
 //     });
 // }
-const blogPost = {
-    title: 'post title',
-    name: ['James Khan', 'Chris Jones', 'Mark Jameson', 'Alene Trenton'],
-    userpic: '',
-    date: '',
-    category: ['Business', 'travel', 'technology'],
 
-
-};
-const time = new Date();
-const day = time.getDate();
-const month = time.getMonth();
-const year = time.getFullYear();
-document.write(day + '.' + month + '.' + year);
+// const time = new Date();
+// const day = time.getDate();
+// const month = time.getMonth();
+// const year = time.getFullYear();
+// document.write(day + '.' + month + '.' + year);
 
 
 const formNewArticle = document.querySelector('.js-form-submit-new-article');
@@ -95,8 +87,9 @@ if (formNewArticle) {
         evt.preventDefault();
         const data = new FormData(evt.target);
         const dataObj = Object.fromEntries(data.entries());
-        dataObj.newMessage = window.quill.getText();
 
+        dataObj.newMessage = window.quill.getText();
+        dataObj.date = new Date();
         const articles = localStorage.getItem('articles');
         if (articles) {
             const parsedArticles = JSON.parse(articles);
@@ -105,10 +98,13 @@ if (formNewArticle) {
         } else {
             localStorage.setItem('articles', JSON.stringify([dataObj]));
         }
+        location.reload();
     });
 }
 
-function createArticleElement(articleItem) {
+const MONTH_LIST = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+function createArticleElement(articleItem, i) {
     const elLi = document.createElement('li');
     elLi.className = 'posts-list__item';
 
@@ -120,6 +116,7 @@ function createArticleElement(articleItem) {
 
     const elImg = document.createElement('img');
     elImg.className = 'post-preview__img';
+    elImg.src = articleItem.blogPicture || 'images/blog-post-picture/blog-post-featured.jpg';
 
     const elSpanCategory = document.createElement('span');
     elSpanCategory.className = 'post-preview__category';
@@ -155,6 +152,9 @@ function createArticleElement(articleItem) {
     const elUserPic = document.createElement('img');
     elUserPic.className = 'post-preview__user-pic';
     elUserPic.src = articleItem.userpic;
+    elUserPic.width = '40';
+    elUserPic.height = '40';
+    elUserPic.alt = '40';
 
 
     const elUserInfo = document.createElement('div');
@@ -166,41 +166,170 @@ function createArticleElement(articleItem) {
 
 
     const elTime = document.createElement('time');
-    // const elTime = new Date()
     elTime.className = 'post-preview__published';
+    const readableDate = new Date(articleItem.date);
+    const yyyy = readableDate.getFullYear();
+    const dd = readableDate.getDate();
+    const mm = MONTH_LIST[readableDate.getMonth()];
+    elTime.innerText = `${dd} ${mm} ${yyyy}`;
 
-    const elButton = document.createElement("div");
-    elButton.className = "post-preview__buttons";
-    const elBookmark = document.createElement('button')
-    elBookmark.className = "post-preview__bookmark";
+    const elButtons = document.createElement('div');
+    elButtons.className = 'post-preview__buttons';
+
+    const elBookmark = document.createElement('button');
+    elBookmark.className = 'post-preview__bookmark';
+    elBookmark.innerText = 'Bookmark';
+
+    const elTextFoother = document.createElement('div');
+    elTextFoother.className = 'post-preview__text-footer';
+
+    const elTextFootSpan1 = document.createElement('span');
+    elTextFootSpan1.innerText = 'By ';
+    const elTextFootSpan2 = document.createElement('span');
+    elTextFootSpan2.innerText = 'in';
+
+    const elTextFootName = document.createElement('span');
+    elTextFootName.className = 'post-preview__username-foot';
+    elTextFootName.innerText = articleItem.username;
+
+    const elTextFootCategory = document.createElement('span');
+    elTextFootCategory.className = 'post-preview__category-foot';
+    elTextFootCategory.innerText = articleItem.category;
 
 
     elLi.append(elPreview);
     elPreview.append(elPicture);
+    elPreview.append(elContent);
+
     elPicture.append(elImg);
     elPicture.append(elSpanCategory);
-    elPreview.append(elContent);
+
     elContent.append(elTitle);
-    elTitle.append(elLink);
     elContent.append(elText);
     elContent.append(elFooter);
+    elContent.append(elTextFoother); //
+
+    elTitle.append(elLink);
     elFooter.append(elUser);
+    elFooter.append(elButtons);
+
+    elButtons.append(elBookmark);
+
     elUser.append(elPicWrap);
     elPicWrap.append(elUserPic);
     elUser.append(elUserInfo);
-    elFooter.append(elButton);
-    elButton.append(elBookmark);
+
+    elUserInfo.append(elUsername);
+    elUserInfo.append(elTime);
+
+    elTextFoother.append(elTextFootSpan1);
+    elTextFoother.append(elTextFootName);
+    elTextFoother.append(elTextFootSpan2);
+    elTextFoother.append(elTextFootCategory);
+
+
+    // elLi.append(elPreview);
+    // elPreview.append(elPicture);
+    // elPicture.append(elImg);
+    // elPicture.append(elSpanCategory);
+    // elPreview.append(elContent);
+    // elContent.append(elTitle);
+    // elTitle.append(elLink);
+    // elContent.append(elText);
+    // elContent.append(elFooter);
+    // elFooter.append(elUser);
+    // elUser.append(elPicWrap);
+    // elPicWrap.append(elUserPic);
+    // elUser.append(elUserInfo);
+    // elUserInfo.append(elUsername);
+    // elUserInfo.append(elTime);
+    // elFooter.append(elButtons);
+    // elButtons.append(elBookmark);
 
     return elLi;
+
 }
 
-document.body.append(createArticleElement({
-    title: 'ttt',
-    username: 'oksana_tymchuk',
-    userpic: 'images/header-icons/user-avatar@2x.png',
-    category: 'Books',
-    newMessage: '',
-}));
+const articlesList = document.querySelector('.js-articles');
+
+function renderArticles() {
+    const articlesData = localStorage.getItem('articles');
+    if (articlesData) {
+        const parsedArticles = JSON.parse(articlesData);
+        const items = document.createDocumentFragment();
+        parsedArticles.forEach((article) => {
+            const articleItemElement = createArticleElement(article);
+            items.append(articleItemElement);
+        });
+        articlesList.innerHTML = '';
+        articlesList.append(items);
+    }
+}
+
+if (articlesList) {
+    renderArticles();
+}
 
 
+(function () {
+    if (window.Chart) {
+        // const chart = document.querySelector('.s-chart');
+        const fruitCanvas = document.getElementById('jsChart');
+        const fruitData = {
+            labels: [
+                'Desktop',
+                'Tablet',
+                'Mobile',
+            ],
+            datasets: [
+                {
+                    data: [123, 75, 41],
+                    backgroundColor: [
+                        '#007BFF',
+                        '#00B8D8',
+                        '#82a5fc',
+                    ],
+                }],
+        };
 
+        const options = {
+            title: {
+                display: true,
+                text: 'Highlight a portion on click',
+                position: 'top',
+            },
+            onClick: (evt, item) => {
+                pieChart.update();
+                item[0]._model.outerRadius += 10;
+            },
+        };
+
+        const pieChart = new Chart(fruitCanvas, {
+            type: 'pie',
+            data: fruitData,
+            options: options,
+        });
+
+        function generateNumber(from, to) {
+            return Math.round(Math.random() * (to - from) + from);
+        }
+
+        function updateChart() {
+            setTimeout(() => {
+                console.log(pieChart);
+                pieChart.data.datasets = [{
+                    data: [generateNumber(50, 123), generateNumber(50, 75), generateNumber(20, 41)],
+                    backgroundColor: [
+                        '#007BFF',
+                        '#00B8D8',
+                        '#82a5fc',
+                    ],
+                }];
+
+                pieChart.update();
+                updateChart();
+            }, 5000);
+        }
+        updateChart();
+    }
+})();

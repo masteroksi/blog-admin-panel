@@ -1,7 +1,10 @@
 .nav-foot {
+
+  @media screen and (max-width: 1070px) {
+    text-align: center;
+  }
   &__list {
     margin: 0 -20px;
-
   }
 
   &__item {

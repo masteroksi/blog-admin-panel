@@ -6,10 +6,18 @@
   align-items: center;
   padding: 0 26px 0 27px;
 
+  @media screen and (max-width: 1070px) {
+    display: block;
+  }
   &__copyright-info {
 
-    &__text {
-      display: inline-block;
+    @media screen and (max-width: 1070px) {
+      text-align: center;
+      padding: 10px 3px;
     }
+  }
+  &__text {
+    display: inline-block;
+
   }
 }

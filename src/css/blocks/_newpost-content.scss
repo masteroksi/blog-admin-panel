@@ -1,9 +1,22 @@
-.newpost-content{
+.newpost-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
   grid-gap: 27px;
+  @media screen and (max-width: 1200px) {
+    grid-gap: 17px;
 
-  //width: 100px;
-  //height: 100px;
+  }
+
+  @media screen and (max-width: 1070px) {
+    grid-template-columns: auto;
+  }
+  @media screen and (max-width: 640px) {
+    display: grid;
+    grid-template-columns: auto;
+
+
+  }
+
+
 }
