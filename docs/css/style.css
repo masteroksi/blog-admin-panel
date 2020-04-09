@@ -177,7 +177,6 @@ b {
   align-items: center;
   flex-flow: row wrap; }
   .header__left {
-    flex-grow: 1;
     flex: 1 1 0; }
   .header__right {
     white-space: nowrap; }
