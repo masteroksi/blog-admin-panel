@@ -263,7 +263,7 @@ b {
   justify-content: space-between;
   flex-flow: row wrap;
   align-items: center;
-  padding: 0 26px 0 27px; }
+  padding: 5px 26px 5px 27px; }
   @media screen and (max-width: 1070px) {
     .foot {
       display: block; } }
@@ -1036,6 +1036,12 @@ b {
   padding: 16px; }
   .post-form__wrap {
     margin-top: 25px; }
+    .post-form__wrap strong {
+      font-weight: bold; }
+    .post-form__wrap em {
+      font-style: italic; }
+    .post-form__wrap u {
+      text-decoration: underline; }
   .post-form__input-post-title {
     padding: 13px;
     border: 1px solid #E0E2E8; }

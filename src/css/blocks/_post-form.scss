@@ -9,6 +9,15 @@
     //border: 1px solid #E0E2E8;
     margin-top: 25px;
 
+    strong {
+      font-weight: bold;
+    }
+    em {
+      font-style: italic;
+    }
+    u {
+      text-decoration: underline;
+    }
   }
 
   &__input-post-title{
